@@ -1,9 +1,8 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"Dalton Trans.":
+  url: https://pubs.rsc.org/en/journals/journalissues/dt#!recentarticles
 
-"PhysRev":
-  url: https://journals.aps.org/
+"ACS Sustain. Chem. Eng.":
+  url: https://pubs.acs.org/journal/ascecg
 
-"Vision":
-  color: "#009f36"
+"Front. Mol. Biosci.":
+  url: https://www.frontiersin.org/journals/molecular-biosciences
