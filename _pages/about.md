@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Assistant professor of Organic Chemistry at Federal University of São João del Rei (UFSJ).
 
