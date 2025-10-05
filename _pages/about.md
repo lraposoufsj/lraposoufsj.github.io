@@ -10,8 +10,8 @@ profile:
   image_circular: true # crops the image to make it circular
   more_info: >
     <p>DCNAT, Office C-3.08</p>
-    <p>Dom Helvécio Sq., 74, UFSJ, CDB</p>
-    <p>São João del Rei, MG 36301-160, BR</p>
+    <p>Dom Helvécio Sq., 74, UFSJ, CDB, 36301-160</p>
+    <p>São João del Rei, BR</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -37,4 +37,7 @@ Worked as an **Intellectual Property Analyst** in the area of Organic Chemistry 
 
 # Research Interests
 
-Current research interests pertain classical organic synthesis, peptide synthesis, organometallic complexes synthesis, and spectroscopy-enabled structural studies, such as those enabled by NMR.
+ - Classical organic synthesis;
+ - Peptide synthesis;
+ - Organometallic complexes synthesis;
+ - Spectroscopy-enabled, mainly NMR-enabled, structural and physical-organic studies.
