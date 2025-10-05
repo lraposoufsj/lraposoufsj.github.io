@@ -27,13 +27,19 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+---
+
 # Education
 
-**Bachelor's degree in Chemistry** from the Federal University of Itajubá (UNIFEI) (2015). **Master's degree in Chemistry** (2018), with emphasis on Organic Chemistry, from the Multicentric Postgraduate Program in Chemistry of Minas Gerais (PPGMQ-MG), working at the Laboratory of Synthesis of Heterocyclic Systems (LaSSH). **Ph.D. in Chemistry** (2022), with emphasis on Organic Chemistry, from the Postgraduate Program in Chemistry (PPGQ) at the Federal University of Minas Gerais (UFMG), working at the Laboratory of Peptide Synthesis and Structure (LASEP). 
+**Bachelor's degree in Chemistry** from the Federal University of Itajubá (UNIFEI) (2015). **Master's degree in Chemistry** (2018), with emphasis on Organic Chemistry, from the Multicentric Postgraduate Program in Chemistry of Minas Gerais (PPGMQ-MG), working at the Laboratory of Synthesis of Heterocyclic Systems (LaSSH). **Ph.D. in Chemistry** (2022), with emphasis on Organic Chemistry, from the Postgraduate Program in Chemistry (PPGQ) at the Federal University of Minas Gerais (UFMG), working at the Laboratory of Peptide Synthesis and Structure (LASEP).
+
+---
 
 # Previous Work Experience
 
 Worked as an **Intellectual Property Analyst** in the area of Organic Chemistry and Pharmacy at the Coordination of Technology Transfer and Innovation (CTIT), the Technological Innovation Nucleus (NIT) of UFMG. Worked as **Substitute Professor of Chemistry** at UNIFEI. 
+
+---
 
 # Research Interests
 
