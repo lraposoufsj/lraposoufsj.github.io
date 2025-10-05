@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: **Assistant professor of Organic Chemistry** at [UFSJ](https://ufsj.edu.br/ "Federal University of São João del Rei") and a member of the [Research Group in Organic Chemistry (GPQO)](https://ufsj.edu.br/gpqo/grupo.php).
+subtitle: **Assistant professor of Organic Chemistry** at [UFSJ](https://ufsj.edu.br/) and a member of the [Research Group in Organic Chemistry (GPQO)](https://ufsj.edu.br/gpqo/grupo.php).
 
 profile:
   align: right
