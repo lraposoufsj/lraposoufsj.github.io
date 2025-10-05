@@ -522,14 +522,14 @@ ninja.data = [{
         title: 'ORCID',
         section: 'Socials',
         handler: () => {
-          window.open("https://orcid.org/https://orcid.org/0000-0002-6476-4531", "_blank");
+          window.open("https://orcid.org/0000-0002-6476-4531", "_blank");
         },
       },{
         id: 'social-researchgate',
         title: 'ResearchGate',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.researchgate.net/profile/https://www.researchgate.net/profile/Lucas-Carvalho-63?ev=hdr_xprf/", "_blank");
+          window.open("https://www.researchgate.net/profile/Lucas-Carvalho-63?ev=hdr_xprf/", "_blank");
         },
       },{
         id: 'social-scholar',
