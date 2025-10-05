@@ -29,11 +29,14 @@ latest_posts:
 
 # **Education**
 
-**Bachelor's degree in Chemistry** from the [Federal University of Itajubá (UNIFEI)](https://unifei.edu.br/) (2012/15). **Master's degree in Chemistry** (2016/18), with emphasis on Organic Chemistry, from the [Multicentric Postgraduate Program in Chemistry of Minas Gerais (PPGMQ-MG)](https://ppgmqmg.com.br/), working at the [Laboratory of Synthesis of Heterocyclic Systems (LaSSH)](https://pnipe.mcti.gov.br/laboratory/7012) and co-advised by [Maurício Santos](https://scholar.google.com/citations?user=iH7Lf3wAAAAJ&hl=en&oi=ao) and [Eder Tavares](https://scholar.google.com/citations?user=9K9DqygAAAAJ&hl=en&oi=ao). **Ph.D. in Chemistry** (2018/2022), with emphasis on Organic Chemistry, from the [Postgraduate Program in Chemistry (PPGQ)](https://ppg.qui.ufmg.br/) at the [Federal University of Minas Gerais (UFMG)](https://ufmg.br/), working at the Laboratory of Peptide Synthesis and Structure (LASEP) and advised by [Jarbas Resende](https://scholar.google.com/citations?user=V6KKdR8AAAAJ&hl=en&oi=ao).
+- **Bachelor's degree in Chemistry** from the [Federal University of Itajubá (UNIFEI)](https://unifei.edu.br/) (2012/15).
+- **Master's degree in Chemistry** (2016/18), with emphasis on Organic Chemistry, from the [Multicentric Postgraduate Program in Chemistry of Minas Gerais (PPGMQ-MG)](https://ppgmqmg.com.br/), working at the [Laboratory of Synthesis of Heterocyclic Systems (LaSSH)](https://pnipe.mcti.gov.br/laboratory/7012) and co-advised by [Maurício Santos](https://scholar.google.com/citations?user=iH7Lf3wAAAAJ&hl=en&oi=ao) and [Eder Tavares](https://scholar.google.com/citations?user=9K9DqygAAAAJ&hl=en&oi=ao).
+- **Ph.D. in Chemistry** (2018/2022), with emphasis on Organic Chemistry, from the [Postgraduate Program in Chemistry (PPGQ)](https://ppg.qui.ufmg.br/) at the [Federal University of Minas Gerais (UFMG)](https://ufmg.br/), working at the Laboratory of Peptide Synthesis and Structure (LASEP) and advised by [Jarbas Resende](https://scholar.google.com/citations?user=V6KKdR8AAAAJ&hl=en&oi=ao).
 
 # **Previous Work Experience**
 
-Worked as an **Intellectual Property Analyst** in the area of Organic Chemistry and Pharmacy at the [Coordination of Technology Transfer and Innovation (CTIT)](http://www.ctit.ufmg.br/), the Technological Innovation Nucleus (NIT) of UFMG (2022/24). Worked as **Substitute Professor of Chemistry** at UNIFEI (2024/25). 
+- Worked as an **Intellectual Property Analyst** in the area of Organic Chemistry and Pharmacy at the [Coordination of Technology Transfer and Innovation (CTIT)](http://www.ctit.ufmg.br/), the Technological Innovation Nucleus (NIT) of UFMG (2022/24).
+- Worked as **Substitute Professor of Chemistry** at UNIFEI (2024/25). 
 
 # **Research Interests**
 
