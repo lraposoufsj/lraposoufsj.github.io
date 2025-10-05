@@ -2,14 +2,14 @@
 layout: about
 title: About
 permalink: /
-subtitle: **Assistant professor of Organic Chemistry** at [UFSJ](https://ufsj.edu.br/ "Federal Univeristy of São João del Rei") and a member of the [Research Group in Organic Chemistry (GPQO)](https://ufsj.edu.br/gpqo/grupo.php).
+subtitle: **Assistant professor of Organic Chemistry** at [UFSJ](https://ufsj.edu.br/ "Federal University of São João del Rei") and a member of the [Research Group in Organic Chemistry (GPQO)](https://ufsj.edu.br/gpqo/grupo.php).
 
 profile:
   align: right
   image: profile_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p style="text-align:center">DCNAT, Office C-3.08</p>
+    <p>DCNAT, Office C-3.08</p>
     <p>Dom Helvécio Sq., 74, UFSJ, CDB, 36301-160</p>
     <p>São João del Rei, BR</p>
 
