@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-teaching",
           title: "Teaching",
-          description: "This page gathers all materials, tests, and related documents of disciplines ministered throughout the years.",
+          description: "Courses, materials, and teaching experience",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
