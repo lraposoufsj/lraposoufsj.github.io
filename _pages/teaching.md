@@ -164,6 +164,9 @@ nav_order: 2
     <h3>Quick Navigation</h3>
     <ul>
       <li><a href="#ufsj">Federal University of São João del Rei (UFSJ)</a></li>
+      <ul>
+        <li><a href="#2025-1">2025/1</a></li>
+      <ul>
       <li><a href="#unifei">Federal University of Itajubá (UNIFEI)</a></li>
     </ul>
   </aside>
@@ -176,7 +179,7 @@ nav_order: 2
       <p><strong>Assistant Professor</strong> | 2025 - Present</p>
       
       <div class="semester-group">
-        <h3 class="semester-header">2025/1 (Current Semester)</h3>
+        <h3 id="2025-1" class="semester-header">2025/1</h3>
         
         <div class="course-card">
           <div class="course-title">
