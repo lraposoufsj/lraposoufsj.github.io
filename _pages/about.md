@@ -35,7 +35,7 @@ latest_posts:
 
 # **Previous Work Experience**
 
-- **Intellectual Property Analyst** in the area of Organic Chemistry and Pharmacy at the [Coordination of Technology Transfer and Innovation (CTIT)](http://www.ctit.ufmg.br/), the Technological Innovation Nucleus (NIT) of UFMG (2022/24).
+- **Intellectual Property Analyst** in Organic Chemistry and Pharmacy at the [Coordination of Technology Transfer and Innovation (CTIT)](http://www.ctit.ufmg.br/) (2022/24).
 - **Substitute Professor of Chemistry** at UNIFEI (2024/25). 
 
 # **Research Interests**
