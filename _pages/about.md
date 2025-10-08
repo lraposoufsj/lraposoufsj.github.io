@@ -35,12 +35,12 @@ latest_posts:
 
 # **Previous Work Experience**
 
-- Worked as an **Intellectual Property Analyst** in the area of Organic Chemistry and Pharmacy at the [Coordination of Technology Transfer and Innovation (CTIT)](http://www.ctit.ufmg.br/), the Technological Innovation Nucleus (NIT) of UFMG (2022/24).
-- Worked as **Substitute Professor of Chemistry** at UNIFEI (2024/25). 
+- **Intellectual Property Analyst** in the area of Organic Chemistry and Pharmacy at the [Coordination of Technology Transfer and Innovation (CTIT)](http://www.ctit.ufmg.br/), the Technological Innovation Nucleus (NIT) of UFMG (2022/24).
+- **Substitute Professor of Chemistry** at UNIFEI (2024/25). 
 
 # **Research Interests**
 
  - Classical organic synthesis (MBH reaction, sulfonyldithiocarbimates, fluorination reactions);
- - Peptide synthesis and structureal/biophysical studies;
+ - Peptide synthesis and structural/biophysical studies;
  - Dithiocarbimate metal complexes;
  - Spectroscopy-enabled, mainly NMR-enabled, structural and physical-organic studies.
