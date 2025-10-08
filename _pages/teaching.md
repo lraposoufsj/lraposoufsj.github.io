@@ -180,44 +180,61 @@ nav_order: 2
         
         <div class="course-card">
           <div class="course-title">
-            <span class="course-code">CS101</span> - Introduction to Programming
+            <span class="course-code">QU03819740</span> - Experimental Biochemistry
           </div>
           <div class="course-role">Assistant Professor</div>
           <div class="course-description">
-            Foundational course covering programming fundamentals using Python. Topics include variables, control structures, functions, and basic data structures.
+            Foundational course covering essential laboratory techniques in Biochemistry, such as the extraction and chemical analysis of starch, coconut oil, soybean protein, DNA, and SDS-PAGE techniques.
           </div>
           <div class="course-links">
-            <a href="#" class="course-link">📚 Course Page</a>
             <a href="#" class="course-link">📝 Syllabus</a>
             <a href="#" class="course-link">💻 Materials</a>
+            <a href="#" class="course-link">💯 Tests</a>
           </div>
         </div>
 
         <div class="course-card">
           <div class="course-title">
-            <span class="course-code">CS302</span> - Data Structures and Algorithms
+            <span class="course-code">QU03419695</span> - Introduction to the Organic Chemistry Laboratory
           </div>
           <div class="course-role">Assistant Professor</div>
           <div class="course-description">
-            Advanced course on fundamental data structures (lists, trees, graphs) and algorithmic techniques. Emphasis on complexity analysis and problem-solving.
+            Foundational course covering essential laboratory techniques in Organic Chemistry, such as liquid-liquid extraction, distillation, chromatography, recrystallization, aliphatic carbon and carbonyl substitutions, diazotization reactions, and functional group identification.
           </div>
           <div class="course-links">
-            <a href="#" class="course-link">📚 Course Page</a>
             <a href="#" class="course-link">📝 Syllabus</a>
+            <a href="#" class="course-link">💻 Materials</a>
+            <a href="#" class="course-link">💯 Tests</a>
           </div>
         </div>
 
         <div class="course-card">
           <div class="course-title">
-            <span class="course-code">CS450</span> - Machine Learning
+            <span class="course-code">QU03319694</span> - Physical Methods in Organic Chemistry
           </div>
           <div class="course-role">Assistant Professor</div>
           <div class="course-description">
-            Graduate-level course covering supervised and unsupervised learning techniques, neural networks, and modern deep learning approaches.
+            Foundational course covering essential structure elucidation techniques for organic compounds, such as infrared (IR) and nuclear magnetic resonance (NMR) spectroscopies, and mass spectrometry (MS).
           </div>
           <div class="course-links">
-            <a href="#" class="course-link">📚 Course Page</a>
-            <a href="#" class="course-link">📊 Projects</a>
+            <a href="#" class="course-link">📝 Syllabus</a>
+            <a href="#" class="course-link">💻 Materials</a>
+            <a href="#" class="course-link">💯 Tests</a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <div class="course-title">
+            <span class="course-code">CNA0001</span> - General Chemistry for Engineering
+          </div>
+          <div class="course-role">Assistant Professor</div>
+          <div class="course-description">
+            Shared foundational course covering essential Chemistry-related topics. Topics include stoichiometry, thermochemistry, chemical equilibrium, chemical kinetics, and electrochemistry.
+          </div>
+          <div class="course-links">
+            <a href="#" class="course-link">📝 Syllabus</a>
+            <a href="#" class="course-link">💻 Materials</a>
+            <a href="#" class="course-link">💯 Tests</a>
           </div>
         </div>
       </div>
