@@ -9,8 +9,9 @@ profile:
   image: profile_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>DCNAT, Office C-3.08</p>
-    <p>Dom Helvécio Sq., 74, UFSJ, CDB, 36301-160</p>
+    <p>UFSJ, DCNAT, Office C-3.08</p>
+    <p>Dom Helvécio Sq., 74</p>
+    <p>Dom Bosco Campus, 36301-160</p>
     <p>São João del Rei, BR</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
