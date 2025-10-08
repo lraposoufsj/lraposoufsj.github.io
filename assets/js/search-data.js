@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-news-amp-opportunities",
-          title: "News &amp; Opportunities",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/news/";
-          },
-        },{id: "nav-teaching",
+  },{id: "nav-teaching",
           title: "Teaching",
           description: "This page gathers all materials, tests, and related documents of disciplines ministered throughout the years.",
           section: "Navigation",
