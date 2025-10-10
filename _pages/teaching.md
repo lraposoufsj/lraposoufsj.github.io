@@ -146,6 +146,86 @@ nav_order: 2
   transform: translateY(-2px);
 }
 
+.materials-toggle {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--global-code-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.materials-toggle:hover {
+  background: var(--global-divider-color);
+}
+
+.materials-toggle-icon {
+  transition: transform 0.3s;
+}
+
+.materials-toggle-icon.open {
+  transform: rotate(180deg);
+}
+
+.materials-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.materials-content.open {
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in;
+}
+
+.materials-section {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--global-code-bg-color);
+  border-radius: 4px;
+}
+
+.materials-section h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--global-theme-color);
+}
+
+.materials-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.materials-list li {
+  margin-bottom: 0.5rem;
+}
+
+.materials-list a {
+  color: var(--global-text-color);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.6rem;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.materials-list a:hover {
+  background: var(--global-bg-color);
+  color: var(--global-theme-color);
+}
+
+.materials-list a::before {
+  content: "📄";
+  margin-right: 0.5rem;
+}
+
 @media (max-width: 768px) {
   .teaching-container {
     flex-direction: column;
@@ -221,6 +301,44 @@ nav_order: 2
             <a href="#" class="course-link">💻 Materials</a>
             <a href="#" class="course-link">💯 Tests</a>
           </div>
+
+          <!-- Expandable Materials Section -->
+          <div class="materials-toggle" onclick="toggleMaterials(this)">
+            <span><strong>📂 Course Materials</strong></span>
+            <span class="materials-toggle-icon">▼</span>
+          </div>
+          <div class="materials-content">
+            <div class="materials-section">
+              <h4>📖 Lecture Notes</h4>
+              <ul class="materials-list">
+                <li><a href="#" target="_blank">Lecture 01 - Introduction to Data Structures</a></li>
+                <li><a href="#" target="_blank">Lecture 02 - Arrays and Linked Lists</a></li>
+                <li><a href="#" target="_blank">Lecture 03 - Stacks and Queues</a></li>
+                <li><a href="#" target="_blank">Lecture 04 - Trees and Binary Search Trees</a></li>
+                <li><a href="#" target="_blank">Lecture 05 - Graph Algorithms</a></li>
+              </ul>
+            </div>
+            
+            <div class="materials-section">
+              <h4>📝 Exams and Tests</h4>
+              <ul class="materials-list">
+                <li><a href="#" target="_blank">Test 1 - Arrays and Lists</a></li>
+                <li><a href="#" target="_blank">Test 1 - Solutions</a></li>
+                <li><a href="#" target="_blank">Midterm Exam</a></li>
+                <li><a href="#" target="_blank">Midterm - Solutions</a></li>
+                <li><a href="#" target="_blank">Final Exam</a></li>
+              </ul>
+            </div>
+            
+            <div class="materials-section">
+              <h4>💻 Assignments</h4>
+              <ul class="materials-list">
+                <li><a href="#" target="_blank">Assignment 1 - Implementing a Linked List</a></li>
+                <li><a href="#" target="_blank">Assignment 2 - Binary Search Tree Operations</a></li>
+                <li><a href="#" target="_blank">Assignment 3 - Graph Traversal Algorithms</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div class="course-card">
@@ -243,7 +361,7 @@ nav_order: 2
     <!-- Previous Position -->
     <section id="unifei" class="institution-section">
       <h2 class="institution-header">Federal University of Itajubá (UNIFEI)</h2>
-      <p><strong>Substitute Professor</strong> | 2024</p>
+      <p><strong>Substitute Professor</strong> | 2024/25</p>
       
       <div class="semester-group">
         <h3 class="semester-header">2025/1</h3>
