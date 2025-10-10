@@ -510,6 +510,16 @@ nav_order: 2
         </div>
       </div>
     </section>
-
+    
   </div>
 </div>
+
+<script>
+function toggleMaterials(element) {
+  const content = element.nextElementSibling;
+  const icon = element.querySelector('.materials-toggle-icon');
+  
+  content.classList.toggle('open');
+  icon.classList.toggle('open');
+}
+</script>
