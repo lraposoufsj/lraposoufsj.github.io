@@ -453,9 +453,7 @@ nav_order: 2
             Foundational course covering essential theoretical aspects of Organic Chemistry for Chemical and Materials Engineering, such as organic acids and bases, bond theory and conjugation, physical and chemical properties of organic compounds, radical reactions, electrophilic aromatic substitution reactions, and carboxyl condensation reactions.
           </div>
           <div class="course-links">
-            <a href="#" class="course-link">📝 Syllabus</a>
-            <a href="#" class="course-link">💻 Materials</a>
-            <a href="#" class="course-link">💯 Tests</a>
+            <a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
           </div>
 
           <!-- Expandable Materials Section -->
@@ -477,7 +475,7 @@ nav_order: 2
                 <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M8.pdf' | relative_url }}" target="_blank">Part 08 - Radical Reactions</a></li>
                 <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M9.pdf' | relative_url }}" target="_blank">Part 09 - Alkene Addition Reactions</a></li>
                 <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M10.pdf' | relative_url }}" target="_blank">Part 10 - Electrophilic Aromatic Substitution Reactions</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M11.pdf' | relative_url }}" target="_blank">Part 08 - Carbonyl Substitution and Addition Reactions</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M11.pdf' | relative_url }}" target="_blank">Part 11 - Carbonyl Substitution and Addition Reactions</a></li>
               </ul>
             </div>
             
@@ -489,8 +487,8 @@ nav_order: 2
                 <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest2.pdf' | relative_url }}" target="_blank">Short Test 2 - Part 08</a></li>
                 <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test2.pdf' | relative_url }}" target="_blank">Test 2 - Parts 01 to 09</a></li>
                 <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest3.pdf' | relative_url }}" target="_blank">Short Test 3 - Part 10</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test3.pdf' | relative_url }}" target="_blank">Test 3 - Parts 01 to 12</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_TestSub.pdf' | relative_url }}" target="_blank">Replacement Test - Parts 01 to 12</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test3.pdf' | relative_url }}" target="_blank">Test 3 - Parts 01 to 11</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_TestSub.pdf' | relative_url }}" target="_blank">Replacement Test - Parts 01 to 11</a></li>
               </ul>
             </div>
             
