@@ -243,8 +243,20 @@ nav_order: 2
   <aside class="toc-sidebar">
     <h3>Quick Navigation</h3>
     <ul>
-      <li><a href="#ufsj">Federal University of São João del Rei (UFSJ)</a></li>
-      <li><a href="#unifei">Federal University of Itajubá (UNIFEI)</a></li>
+      <li>
+        <a href="#ufsj">UFSJ (2025 - Present)</a>
+        <ul>
+          <li><a href="#ufsj-2025-2">2025/2</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#unifei">UNIFEI (2024/25)</a>
+        <ul>
+          <li><a href="#unifei-2025-1">2025/1</a></li>
+          <li><a href="#unifei-2024-4">2024/4 (Summer Course)</a></li>
+          <li><a href="#unifei-2024-2">2024/2</a></li>
+        </ul>
+      </li>
     </ul>
   </aside>
 
@@ -256,7 +268,7 @@ nav_order: 2
       <p><strong>Assistant Professor</strong> | 2025 - Present</p>
       
       <div class="semester-group">
-        <h3 class="semester-header">2025/1</h3>
+        <h3 class="semester-header" id="ufsj-2025-2">2025/2</h3>
         
         <div class="course-card">
           <div class="course-title">
@@ -362,7 +374,7 @@ nav_order: 2
       <p><strong>Substitute Professor</strong> | 2024/25</p>
       
       <div class="semester-group">
-        <h3 class="semester-header">2025/1</h3>
+        <h3 class="semester-header" id="unifei-2025-1">2025/1</h3>
         
         <div class="course-card">
           <div class="course-title">
@@ -491,7 +503,7 @@ nav_order: 2
       </div>
 
       <div class="semester-group">
-        <h3 class="semester-header">2024/4 (Summer Course)</h3>
+        <h3 class="semester-header" id="unifei-2024-4">2024/4 (Summer Course)</h3>
         
         <div class="course-card">
           <div class="course-title">
@@ -537,7 +549,7 @@ nav_order: 2
       </div>
 
       <div class="semester-group">
-        <h3 class="semester-header">2024/2</h3>
+        <h3 class="semester-header" id="unifei-2024-2">2024/2</h3>
 
         <div class="course-card">
           <div class="course-title">
