@@ -434,9 +434,36 @@ nav_order: 2
             Foundational course taught during Jan/2025 covering substitution and elimination reactions, reactions of alkenes and alkynes, reactions of aromatic compounds, reactions of alcohols and ethers (including oxidation and reduction processes), organometallic chemistry, and carboxylic acid derivatives and their reactions.
           </div>
           <div class="course-links">
-            <a href="#" class="course-link">📝 Syllabus</a>
-            <a href="#" class="course-link">💻 Materials</a>
-            <a href="#" class="course-link">💯 Tests</a>
+            <a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
+          </div>
+
+          <!-- Expandable Materials Section -->
+          <div class="materials-toggle" onclick="toggleMaterials(this)">
+            <span><strong>📂 Course Materials</strong></span>
+            <span class="materials-toggle-icon">▼</span>
+          </div>
+          <div class="materials-content">
+            <div class="materials-section">
+              <h4>📖 Lecture Notes and Slides</h4>
+              <ul class="materials-list">
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Slides_M1.pdf' | relative_url }}" target="_blank">Part 01 - Alkenes and alkynes</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Slides_M2.pdf' | relative_url }}" target="_blank">Part 02 - Alkene addition reactions</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Slides_M3.pdf' | relative_url }}" target="_blank">Part 03 - Conjugated alkenes</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Lecture_Notes_M4.pdf' | relative_url }}" target="_blank">Part 04 - Aromatic compounds</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Lecture_Notes_M5.pdf' | relative_url }}" target="_blank">Part 05 - Alcohols and Ethers</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Lecture_Notes_M6.pdf' | relative_url }}" target="_blank">Part 06 - Oxidations, reductions, and RLi/RMgX</a></li>
+              </ul>
+            </div>
+            
+            <div class="materials-section">
+              <h4>📝 Exams and Tests</h4>
+              <ul class="materials-list">
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test1.pdf' | relative_url }}" target="_blank">Test 1 - Parts 01 and 02</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test2.pdf' | relative_url }}" target="_blank">Test 2 - Parts 01 to 04</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test3.pdf' | relative_url }}" target="_blank">Test 3 - Parts 01 to 05</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test4.pdf' | relative_url }}" target="_blank">Test 4 - Parts 01 to 07</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -489,15 +516,6 @@ nav_order: 2
                 <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest3.pdf' | relative_url }}" target="_blank">Short Test 3 - Part 10</a></li>
                 <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test3.pdf' | relative_url }}" target="_blank">Test 3 - Parts 01 to 11</a></li>
                 <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_TestSub.pdf' | relative_url }}" target="_blank">Replacement Test - Parts 01 to 11</a></li>
-              </ul>
-            </div>
-
-            <div class="materials-section">
-              <h4>💻 Exercises</h4>
-              <ul class="materials-list">
-                <li><a href="#" target="_blank">Assignment 1 - Implementing a Linked List</a></li>
-                <li><a href="#" target="_blank">Assignment 2 - Binary Search Tree Operations</a></li>
-                <li><a href="#" target="_blank">Assignment 3 - Graph Traversal Algorithms</a></li>
               </ul>
             </div>
             
