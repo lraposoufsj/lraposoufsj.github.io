@@ -370,9 +370,38 @@ nav_order: 2
             Foundational course for Chemical and Bioprocesses Engineering, and Biology, covering atomic theory and electronic structure, chemical bonds, gases, liquids and solutions, thermodynamics, chemical kinetics, and electrochemistry.
           </div>
           <div class="course-links">
-            <a href="#" class="course-link">📝 Syllabus</a>
-            <a href="#" class="course-link">💻 Materials</a>
-            <a href="#" class="course-link">💯 Tests</a>
+            <a href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
+          </div>
+
+          <!-- Expandable Materials Section -->
+          <div class="materials-toggle" onclick="toggleMaterials(this)">
+            <span><strong>📂 Course Materials</strong></span>
+            <span class="materials-toggle-icon">▼</span>
+          </div>
+          <div class="materials-content">
+            <div class="materials-section">
+              <h4>📖 Lecture Notes and Slides</h4>
+              <ul class="materials-list">
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_Lecture_Notes_M1.pdf' | relative_url }}" target="_blank">Part 1 - UV-Vis Spectroscopy</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M2.pdf' | relative_url }}" target="_blank">Part 2 - Infrared Spectroscopy</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p1.pdf' | relative_url }}" target="_blank">Part 3A - NMR (Introduction and Concepts)</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p2.pdf' | relative_url }}" target="_blank">Part 3B - NMR (Proton NMR)</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p3.pdf' | relative_url }}" target="_blank">Part 3C - NMR (Carbon-13 NMR)</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p4.pdf' | relative_url }}" target="_blank">Part 3D - NMR (J coupling and 2D NMR)</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M4.pdf' | relative_url }}" target="_blank">Part 4 - Mass Spectrometry</a></li>
+              </ul>
+            </div>
+            
+            <div class="materials-section">
+              <h4>📝 Exams and Tests</h4>
+              <ul class="materials-list">
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_ShortTest1.pdf' | relative_url }}" target="_blank">Short Test 1 - Part 2</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_Test1.pdf' | relative_url }}" target="_blank">Test 1 - Parts 1 to 4</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_ShortTest2.pdf' | relative_url }}" target="_blank">Short Test 2 - Part 5</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_Test2.pdf' | relative_url }}" target="_blank">Test 2 - Parts 6, 7, and 9</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_Test_Sub.pdf' | relative_url }}" target="_blank">Substitute Test - Parts 1 to 4, 6, 7, and 9</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -385,9 +414,10 @@ nav_order: 2
             Foundational course for Chemistry and Chemical Engineering, covering macroscopic evidence of chemical reactions, stoichiometry, standardization, the copper cycle, chemical kinetics, chemical equilibrium, precipitation reactions, and electrochemistry.
           </div>
           <div class="course-links">
-            <a href="#" class="course-link">📚 Course Page</a>
-            <a href="#" class="course-link">💻 Code Examples</a>
-            <a href="#" class="course-link">📊 Projects</a>
+            <a href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
+            <a href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Exp_Prot.pdf' | relative_url }}" target="_blank" class="course-link">🧪 Experiments</a>
+            <a href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Test1.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 1</a>
+            <a href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Test2.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 2</a>
           </div>
         </div>
 
@@ -400,9 +430,44 @@ nav_order: 2
             Foundational course for Chemistry covering essential spectroscopic and spectrometric tools for the analysis of Organic Compounds, such as UV-Vis, FTIR, MS, and NMR.
           </div>
           <div class="course-links">
-            <a href="#" class="course-link">📚 Course Page</a>
-            <a href="#" class="course-link">💻 Code Examples</a>
-            <a href="#" class="course-link">📊 Projects</a>
+            <a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
+          </div>
+
+          <!-- Expandable Materials Section -->
+          <div class="materials-toggle" onclick="toggleMaterials(this)">
+            <span><strong>📂 Course Materials</strong></span>
+            <span class="materials-toggle-icon">▼</span>
+          </div>
+          <div class="materials-content">
+            <div class="materials-section">
+              <h4>📖 Lecture Notes and Slides</h4>
+              <ul class="materials-list">
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Lecture_Notes_M1.pdf' | relative_url }}" target="_blank">Part 1 - UV-Vis Spectroscopy</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M2.pdf' | relative_url }}" target="_blank">Part 2 - Infrared Spectroscopy</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p1.pdf' | relative_url }}" target="_blank">Part 3A - NMR (Introduction and Concepts)</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p2.pdf' | relative_url }}" target="_blank">Part 3B - NMR (Proton NMR)</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p3.pdf' | relative_url }}" target="_blank">Part 3C - NMR (Carbon-13 NMR)</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p4.pdf' | relative_url }}" target="_blank">Part 3D - NMR (J coupling and 2D NMR)</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M4.pdf' | relative_url }}" target="_blank">Part 4 - Mass Spectrometry</a></li>
+              </ul>
+            </div>
+            
+            <div class="materials-section">
+              <h4>📝 Exams and Tests</h4>
+              <ul class="materials-list">
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Test1.pdf' | relative_url }}" target="_blank">Test 1 - Parts 1 and 2</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Test2.pdf' | relative_url }}" target="_blank">Test 2 - Parts 1 to 3</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Test3.pdf' | relative_url }}" target="_blank">Test 3 - Parts 1 to 4</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Test_Sub.pdf' | relative_url }}" target="_blank">Substitute Test - Parts 1 to 4</a></li>
+              </ul>
+            </div>
+
+            <div class="materials-section">
+              <h4>💻 Exercises</h4>
+              <ul class="materials-list">
+                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Solved_ex_M3.pdf' | relative_url }}" target="_blank">Solved Exercises - NMR Spectroscopy</a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -415,9 +480,9 @@ nav_order: 2
             Foundational course covering essential experimental aspects of Chemistry for Engineering courses, covering macroscopical evidence of chemical reactions, chemical equilibrium, chemical thermodynamics, and electrochemistry.
           </div>
           <div class="course-links">
-            <a href="#" class="course-link">📚 Course Page</a>
-            <a href="#" class="course-link">💻 Code Examples</a>
-            <a href="#" class="course-link">📊 Projects</a>
+            <a href="{{ '/assets/pdf/unifei/2025-1/QUI212_20251_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
+            <a href="{{ '/assets/pdf/unifei/2025-1/QUI212_20251_Test1.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 1</a>
+            <a href="{{ '/assets/pdf/unifei/2025-1/QUI212_20251_Test2.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 2</a>
           </div>
         </div>
       </div>
@@ -434,7 +499,7 @@ nav_order: 2
             Foundational course taught during Jan/2025 covering substitution and elimination reactions, reactions of alkenes and alkynes, reactions of aromatic compounds, reactions of alcohols and ethers (including oxidation and reduction processes), organometallic chemistry, and carboxylic acid derivatives and their reactions.
           </div>
           <div class="course-links">
-            <a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
+            <a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
           </div>
 
           <!-- Expandable Materials Section -->
@@ -446,22 +511,22 @@ nav_order: 2
             <div class="materials-section">
               <h4>📖 Lecture Notes and Slides</h4>
               <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Slides_M1.pdf' | relative_url }}" target="_blank">Part 01 - Alkenes and alkynes</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Slides_M2.pdf' | relative_url }}" target="_blank">Part 02 - Alkene addition reactions</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Slides_M3.pdf' | relative_url }}" target="_blank">Part 03 - Conjugated alkenes</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Lecture_Notes_M4.pdf' | relative_url }}" target="_blank">Part 04 - Aromatic compounds</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Lecture_Notes_M5.pdf' | relative_url }}" target="_blank">Part 05 - Alcohols and Ethers</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Lecture_Notes_M6.pdf' | relative_url }}" target="_blank">Part 06 - Oxidations, reductions, and RLi/RMgX</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Slides_M1.pdf' | relative_url }}" target="_blank">Part 1 - Alkenes and alkynes</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Slides_M2.pdf' | relative_url }}" target="_blank">Part 2 - Alkene addition reactions</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Slides_M3.pdf' | relative_url }}" target="_blank">Part 3 - Conjugated alkenes</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Lecture_Notes_M4.pdf' | relative_url }}" target="_blank">Part 4 - Aromatic compounds</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Lecture_Notes_M5.pdf' | relative_url }}" target="_blank">Part 5 - Alcohols and Ethers</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Lecture_Notes_M6.pdf' | relative_url }}" target="_blank">Part 6 - Oxidations, reductions, and RLi/RMgX</a></li>
               </ul>
             </div>
             
             <div class="materials-section">
               <h4>📝 Exams and Tests</h4>
               <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test1.pdf' | relative_url }}" target="_blank">Test 1 - Parts 01 and 02</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test2.pdf' | relative_url }}" target="_blank">Test 2 - Parts 01 to 04</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test3.pdf' | relative_url }}" target="_blank">Test 3 - Parts 01 to 05</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test4.pdf' | relative_url }}" target="_blank">Test 4 - Parts 01 to 07</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test1.pdf' | relative_url }}" target="_blank">Test 1 - Parts 1 and 2</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test2.pdf' | relative_url }}" target="_blank">Test 2 - Parts 1 to 4</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test3.pdf' | relative_url }}" target="_blank">Test 3 - Parts 1 to 5</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test4.pdf' | relative_url }}" target="_blank">Test 4 - Parts 1 to 7</a></li>
               </ul>
             </div>
           </div>
@@ -492,15 +557,15 @@ nav_order: 2
             <div class="materials-section">
               <h4>📖 Lecture Notes</h4>
               <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M1.pdf' | relative_url }}" target="_blank">Part 01 - Representation and Bond Theory</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M2.pdf' | relative_url }}" target="_blank">Part 02 - Inductive and Mesomeric Effect</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M3.pdf' | relative_url }}" target="_blank">Part 03 - Functional Groups</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M4.pdf' | relative_url }}" target="_blank">Part 04 - Nomenclature</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M5.pdf' | relative_url }}" target="_blank">Part 05 - Physical and Chemical Properties</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M6.pdf' | relative_url }}" target="_blank">Part 06 - Acids and Bases</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M7.pdf' | relative_url }}" target="_blank">Part 07 - Stereochemistry</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M8.pdf' | relative_url }}" target="_blank">Part 08 - Radical Reactions</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M9.pdf' | relative_url }}" target="_blank">Part 09 - Alkene Addition Reactions</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M1.pdf' | relative_url }}" target="_blank">Part 1 - Representation and Bond Theory</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M2.pdf' | relative_url }}" target="_blank">Part 2 - Inductive and Mesomeric Effect</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M3.pdf' | relative_url }}" target="_blank">Part 3 - Functional Groups</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M4.pdf' | relative_url }}" target="_blank">Part 4 - Nomenclature</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M5.pdf' | relative_url }}" target="_blank">Part 5 - Physical and Chemical Properties</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M6.pdf' | relative_url }}" target="_blank">Part 6 - Acids and Bases</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M7.pdf' | relative_url }}" target="_blank">Part 7 - Stereochemistry</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M8.pdf' | relative_url }}" target="_blank">Part 8 - Radical Reactions</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M9.pdf' | relative_url }}" target="_blank">Part 9 - Alkene Addition Reactions</a></li>
                 <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M10.pdf' | relative_url }}" target="_blank">Part 10 - Electrophilic Aromatic Substitution Reactions</a></li>
                 <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M11.pdf' | relative_url }}" target="_blank">Part 11 - Carbonyl Substitution and Addition Reactions</a></li>
               </ul>
@@ -509,21 +574,21 @@ nav_order: 2
             <div class="materials-section">
               <h4>📝 Exams and Tests</h4>
               <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest1.pdf' | relative_url }}" target="_blank">Short Test 1 - Part 02</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test1.pdf' | relative_url }}" target="_blank">Test 1 - Parts 01 to 05</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest2.pdf' | relative_url }}" target="_blank">Short Test 2 - Part 08</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test2.pdf' | relative_url }}" target="_blank">Test 2 - Parts 01 to 09</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest1.pdf' | relative_url }}" target="_blank">Short Test 1 - Part 2</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test1.pdf' | relative_url }}" target="_blank">Test 1 - Parts 1 to 5</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest2.pdf' | relative_url }}" target="_blank">Short Test 2 - Part 8</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test2.pdf' | relative_url }}" target="_blank">Test 2 - Parts 1 to 9</a></li>
                 <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest3.pdf' | relative_url }}" target="_blank">Short Test 3 - Part 10</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test3.pdf' | relative_url }}" target="_blank">Test 3 - Parts 01 to 11</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_TestSub.pdf' | relative_url }}" target="_blank">Replacement Test - Parts 01 to 11</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test3.pdf' | relative_url }}" target="_blank">Test 3 - Parts 1 to 11</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_TestSub.pdf' | relative_url }}" target="_blank">Replacement Test - Parts 1 to 11</a></li>
               </ul>
             </div>
             
             <div class="materials-section">
               <h4>💻 Exercises</h4>
               <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_List1.pdf' | relative_url }}" target="_blank">Exercise List 1 - Parts 01 to 05</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_List2.pdf' | relative_url }}" target="_blank">Exercise List 2 - Parts 06 to 09</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_List1.pdf' | relative_url }}" target="_blank">Exercise List 1 - Parts 1 to 5</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_List2.pdf' | relative_url }}" target="_blank">Exercise List 2 - Parts 6 to 9</a></li>
               </ul>
             </div>
           </div>
