@@ -267,8 +267,8 @@ nav_order: 2
             Foundational course covering essential laboratory techniques in Biochemistry, such as the extraction and chemical analysis of starch, coconut oil, soybean protein, DNA, and SDS-PAGE techniques.
           </div>
           <div class="course-links">
-            <a href="{{ '/assets/pdf/ufsj/2025-2/BQE_20252_Syllabus.pdf' | relative_url }}" target="_blank" download class="course-link">📝 Syllabus</a>
-            <a href="{{ '/assets/pdf/ufsj/2025-2/BQE_20252_Exp_Prot.pdf' | relative_url }}" class="course-link">🧪 Experiments</a>
+            <a href="{{ '/assets/pdf/ufsj/2025-2/BQE_20252_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
+            <a href="{{ '/assets/pdf/ufsj/2025-2/BQE_20252_Exp_Prot.pdf' | relative_url }}" target="_blank" class="course-link">🧪 Experiments</a>
             <a href="#" class="course-link">💯 Test 1</a>
           </div>
         </div>
@@ -282,8 +282,8 @@ nav_order: 2
             Foundational course covering essential laboratory techniques in Organic Chemistry, such as liquid-liquid extraction, distillation, chromatography, recrystallization, aliphatic carbon and carbonyl substitutions, diazotization reactions, and functional group identification.
           </div>
           <div class="course-links">
-            <a href="{{ '/assets/pdf/ufsj/2025-2/ILQO_20252_Syllabus.pdf' | relative_url }}" class="course-link">📝 Syllabus</a>
-            <a href="{{ '/assets/pdf/ufsj/2025-2/ILQO_20252_Exp_Prot.pdf' | relative_url }}" class="course-link">🧪 Experiments</a>
+            <a href="{{ '/assets/pdf/ufsj/2025-2/ILQO_20252_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
+            <a href="{{ '/assets/pdf/ufsj/2025-2/ILQO_20252_Exp_Prot.pdf' | relative_url }}" target="_blank" class="course-link">🧪 Experiments</a>
             <a href="#" class="course-link">💯 Test 1</a>
           </div>
         </div>
@@ -297,7 +297,7 @@ nav_order: 2
             Foundational course covering essential structure elucidation techniques for organic compounds, such as infrared (IR) and nuclear magnetic resonance (NMR) spectroscopies, and mass spectrometry (MS).
           </div>
           <div class="course-links">
-            <a href="{{ '/assets/pdf/ufsj/2025-2/MFQO_20252_Syllabus.pdf' | relative_url }}" class="course-link">📝 Syllabus</a>
+            <a href="{{ '/assets/pdf/ufsj/2025-2/MFQO_20252_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
           </div>
 
           <!-- Expandable Materials Section -->
@@ -457,6 +457,51 @@ nav_order: 2
             <a href="#" class="course-link">💻 Materials</a>
             <a href="#" class="course-link">💯 Tests</a>
           </div>
+
+          <!-- Expandable Materials Section -->
+          <div class="materials-toggle" onclick="toggleMaterials(this)">
+            <span><strong>📂 Course Materials</strong></span>
+            <span class="materials-toggle-icon">▼</span>
+          </div>
+          <div class="materials-content">
+            <div class="materials-section">
+              <h4>📖 Lecture Notes</h4>
+              <ul class="materials-list">
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M1.pdf' | relative_url }}" target="_blank">Part 01 - Representation and Bond Theory</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M2.pdf' | relative_url }}" target="_blank">Part 02 - Inductive and Mesomeric Effect</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M3.pdf' | relative_url }}" target="_blank">Part 03 - Functional Groups</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M4.pdf' | relative_url }}" target="_blank">Part 04 - Nomenclature</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M5.pdf' | relative_url }}" target="_blank">Part 05 - Physical and Chemical Properties</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M6.pdf' | relative_url }}" target="_blank">Part 06 - Acids and Bases</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M7.pdf' | relative_url }}" target="_blank">Part 07 - Stereochemistry</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M8.pdf' | relative_url }}" target="_blank">Part 08 - Radical Reactions</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M9.pdf' | relative_url }}" target="_blank">Part 09 - Alkene Addition Reactions</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M10.pdf' | relative_url }}" target="_blank">Part 10 - Electrophilic Aromatic Substitution Reactions</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M11.pdf' | relative_url }}" target="_blank">Part 08 - Carbonyl Substitution and Addition Reactions</a></li>
+              </ul>
+            </div>
+            
+            <div class="materials-section">
+              <h4>📝 Exams and Tests</h4>
+              <ul class="materials-list">
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest1.pdf' | relative_url }}" target="_blank">Short Test 1 - Part 02</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test1.pdf' | relative_url }}" target="_blank">Test 1 - Parts 01 to 05</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest2.pdf' | relative_url }}" target="_blank">Short Test 2 - Part 08</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test2.pdf' | relative_url }}" target="_blank">Test 2 - Parts 01 to 09</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest3.pdf' | relative_url }}" target="_blank">Short Test 3 - Part 10</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test3.pdf' | relative_url }}" target="_blank">Test 3 - Parts 01 to 12</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_TestSub.pdf' | relative_url }}" target="_blank">Replacement Test - Parts 01 to 12</a></li>
+              </ul>
+            </div>
+            
+            <div class="materials-section">
+              <h4>💻 Exercises</h4>
+              <ul class="materials-list">
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_List1.pdf' | relative_url }}" target="_blank">Exercise List 1 - Parts 01 to 05</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_List2.pdf' | relative_url }}" target="_blank">Exercise List 2 - Parts 06 to 09</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div class="course-card">
@@ -468,9 +513,10 @@ nav_order: 2
             Foundational course covering essential experimental aspects of Organic Chemistry for Chemical and Materials Engineering, such as liquid-liquid extraction, chromatography (TLC and silica column), production of ASA, and recrystalization.
           </div>
           <div class="course-links">
-            <a href="#" class="course-link">📝 Syllabus</a>
-            <a href="#" class="course-link">💻 Materials</a>
-            <a href="#" class="course-link">💯 Tests</a>
+            <a href="{{ '/assets/pdf/unifei/2024-2/QUI068_20242_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
+            <a href="{{ '/assets/pdf/unifei/2024-2/QUI068_20242_Exp_Prot.pdf' | relative_url }}" target="_blank" class="course-link">🧪 Experiments</a>
+            <a href="{{ '/assets/pdf/unifei/2024-2/QUI068_20242_Test1.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 1</a>
+            <a href="{{ '/assets/pdf/unifei/2024-2/QUI068_20242_Test2.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 2</a>
           </div>
         </div>
 
@@ -483,9 +529,10 @@ nav_order: 2
             Foundational course covering essential experimental aspects of Chemistry for Physics, Biology, and Bioprocess Engineering courses, covering macroscopical evidence of chemical reactions, stoichiometry, standardization, chemical kinetics, and chemical equilibrium.
           </div>
           <div class="course-links">
-            <a href="#" class="course-link">📝 Syllabus</a>
-            <a href="#" class="course-link">💻 Materials</a>
-            <a href="#" class="course-link">💯 Tests</a>
+            <a href="{{ '/assets/pdf/unifei/2024-2/QUI113_20242_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
+            <a href="{{ '/assets/pdf/unifei/2024-2/QUI113_20242_Exp_Prot.pdf' | relative_url }}" target="_blank" class="course-link">🧪 Experiments</a>
+            <a href="{{ '/assets/pdf/unifei/2024-2/QUI113_20242_Test1.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 1</a>
+            <a href="{{ '/assets/pdf/unifei/2024-2/QUI113_20242_Test2.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 2</a>
           </div>
         </div>
 
@@ -498,9 +545,12 @@ nav_order: 2
             Foundational course covering essential experimental aspects of Chemistry for Engineering courses, covering macroscopical evidence of chemical reactions, chemical equilibrium, chemical thermodynamics, and electrochemistry.
           </div>
           <div class="course-links">
-            <a href="#" class="course-link">📝 Syllabus</a>
-            <a href="#" class="course-link">💻 Materials</a>
-            <a href="#" class="course-link">💯 Tests</a>
+            <a href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
+            <a href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Exp_Prot.pdf' | relative_url }}" target="_blank" class="course-link">🧪 Experiments</a>
+            <a href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Test1.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 1</a>
+            <a href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Test1_2.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 1 (2nd class)</a>
+            <a href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Test2.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 2</a>
+            <a href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Test2_2.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 2 (2nd class)</a>
           </div>
         </div>
       </div>
