@@ -270,6 +270,8 @@ nav_order: 2
             <a href="{{ '/assets/pdf/ufsj/2025-2/BQE_20252_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
             <a href="{{ '/assets/pdf/ufsj/2025-2/BQE_20252_Exp_Prot.pdf' | relative_url }}" target="_blank" class="course-link">🧪 Experiments</a>
             <a href="#" class="course-link">💯 Test 1</a>
+            <a href="#" class="course-link">💯 Test 2</a>
+            <a href="#" class="course-link">💯 Substitute Test</a>
           </div>
         </div>
 
@@ -285,6 +287,8 @@ nav_order: 2
             <a href="{{ '/assets/pdf/ufsj/2025-2/ILQO_20252_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
             <a href="{{ '/assets/pdf/ufsj/2025-2/ILQO_20252_Exp_Prot.pdf' | relative_url }}" target="_blank" class="course-link">🧪 Experiments</a>
             <a href="#" class="course-link">💯 Test 1</a>
+            <a href="#" class="course-link">💯 Test 2</a>
+            <a href="#" class="course-link">💯 Substitute Test</a>
           </div>
         </div>
 
@@ -321,7 +325,7 @@ nav_order: 2
                 <li><a href="{{ '/assets/pdf/ufsj/2025-2/MFQO_20252_Test1.pdf' | relative_url }}" target="_blank">Test 1 - MS</a></li>
                 <li><a href="#" target="_blank">Test 2 - MS and IR</a></li>
                 <li><a href="#" target="_blank">Test 3 - MS, IR, and NMR</a></li>
-                <li><a href="#" target="_blank">Replacement Test</a></li>
+                <li><a href="#" target="_blank">Substitute Test</a></li>
               </ul>
             </div>
             
@@ -329,8 +333,6 @@ nav_order: 2
               <h4>💻 Exercises</h4>
               <ul class="materials-list">
                 <li><a href="#" target="_blank">Assignment 1 - Implementing a Linked List</a></li>
-                <li><a href="#" target="_blank">Assignment 2 - Binary Search Tree Operations</a></li>
-                <li><a href="#" target="_blank">Assignment 3 - Graph Traversal Algorithms</a></li>
               </ul>
             </div>
           </div>
@@ -347,7 +349,8 @@ nav_order: 2
           <div class="course-links">
             <a href="#" class="course-link">📝 Syllabus</a>
             <a href="#" class="course-link">💻 Materials</a>
-            <a href="#" class="course-link">💯 Tests</a>
+            <a href="#" class="course-link">💯 Test 1</a>
+            <a href="#" class="course-link">💯 Test 2</a>
           </div>
         </div>
       </div>
