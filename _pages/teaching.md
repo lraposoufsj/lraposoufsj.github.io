@@ -491,6 +491,15 @@ nav_order: 2
                 <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_TestSub.pdf' | relative_url }}" target="_blank">Replacement Test - Parts 01 to 11</a></li>
               </ul>
             </div>
+
+            <div class="materials-section">
+              <h4>💻 Exercises</h4>
+              <ul class="materials-list">
+                <li><a href="#" target="_blank">Assignment 1 - Implementing a Linked List</a></li>
+                <li><a href="#" target="_blank">Assignment 2 - Binary Search Tree Operations</a></li>
+                <li><a href="#" target="_blank">Assignment 3 - Graph Traversal Algorithms</a></li>
+              </ul>
+            </div>
             
             <div class="materials-section">
               <h4>💻 Exercises</h4>
