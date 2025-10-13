@@ -267,8 +267,8 @@ nav_order: 2
             Foundational course covering essential laboratory techniques in Biochemistry, such as the extraction and chemical analysis of starch, coconut oil, soybean protein, DNA, and SDS-PAGE techniques.
           </div>
           <div class="course-links">
-            <a href="{{ '/assets/pdf/teaching/ufsj/2025-1/BQE_20252_Syllabus.pdf' | relative_url }}" class="course-link">📝 Syllabus</a>
-            <a href="{{ '/assets/pdf/teaching/ufsj/2025-1/BQE_20252_Exp_Prot.pdf' | relative_url }}" class="course-link">🧪 Experiments</a>
+            <a href="{{ '/assets/pdf/teaching/ufsj/2025-2/BQE_20252_Syllabus.pdf' | relative_url }}" target="_blank" download class="course-link">📝 Syllabus</a>
+            <a href="{{ '/assets/pdf/teaching/ufsj/2025-2/BQE_20252_Exp_Prot.pdf' | relative_url }}" class="course-link">🧪 Experiments</a>
             <a href="#" class="course-link">💯 Test 1</a>
           </div>
         </div>
@@ -282,8 +282,8 @@ nav_order: 2
             Foundational course covering essential laboratory techniques in Organic Chemistry, such as liquid-liquid extraction, distillation, chromatography, recrystallization, aliphatic carbon and carbonyl substitutions, diazotization reactions, and functional group identification.
           </div>
           <div class="course-links">
-            <a href="{{ '/assets/pdf/teaching/ufsj/2025-1/ILQO_20252_Syllabus.pdf' | relative_url }}" class="course-link">📝 Syllabus</a>
-            <a href="{{ '/assets/pdf/teaching/ufsj/2025-1/ILQO_20252_Exp_Prot.pdf' | relative_url }}" class="course-link">🧪 Experiments</a>
+            <a href="{{ '/assets/pdf/teaching/ufsj/2025-2/ILQO_20252_Syllabus.pdf' | relative_url }}" class="course-link">📝 Syllabus</a>
+            <a href="{{ '/assets/pdf/teaching/ufsj/2025-2/ILQO_20252_Exp_Prot.pdf' | relative_url }}" class="course-link">🧪 Experiments</a>
             <a href="#" class="course-link">💯 Test 1</a>
           </div>
         </div>
@@ -297,7 +297,7 @@ nav_order: 2
             Foundational course covering essential structure elucidation techniques for organic compounds, such as infrared (IR) and nuclear magnetic resonance (NMR) spectroscopies, and mass spectrometry (MS).
           </div>
           <div class="course-links">
-            <a href="{{ '/assets/pdf/teaching/ufsj/2025-1/MFQO_20252_Syllabus.pdf' | relative_url }}" class="course-link">📝 Syllabus</a>
+            <a href="{{ '/assets/pdf/teaching/ufsj/2025-2/MFQO_20252_Syllabus.pdf' | relative_url }}" class="course-link">📝 Syllabus</a>
           </div>
 
           <!-- Expandable Materials Section -->
@@ -318,7 +318,7 @@ nav_order: 2
             <div class="materials-section">
               <h4>📝 Exams and Tests</h4>
               <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/teaching/ufsj/2025-1/MFQO_20252_Test1.pdf' | relative_url }}" target="_blank">Test 1 - MS</a></li>
+                <li><a href="{{ '/assets/pdf/teaching/ufsj/2025-2/MFQO_20252_Test1.pdf' | relative_url }}" target="_blank">Test 1 - MS</a></li>
                 <li><a href="#" target="_blank">Test 2 - MS and IR</a></li>
                 <li><a href="#" target="_blank">Test 3 - MS, IR, and NMR</a></li>
                 <li><a href="#" target="_blank">Replacement Test</a></li>
