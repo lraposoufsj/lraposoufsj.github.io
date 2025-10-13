@@ -178,7 +178,7 @@ nav_order: 2
 }
 
 .materials-content.open {
-  max-height: 1000px;
+  max-height: 2500px;
   transition: max-height 0.5s ease-in;
 }
 
