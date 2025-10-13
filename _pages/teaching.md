@@ -418,7 +418,7 @@ nav_order: 2
           </div>
           <div class="course-links">
             <a href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
-            <a href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Exp_Prot.pdf' | relative_url }}" target="_blank" class="course-link">🧪 Experiments</a>
+            <a href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Exp_prot.pdf' | relative_url }}" target="_blank" class="course-link">🧪 Experiments</a>
             <a href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Test1.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 1</a>
             <a href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Test2.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 2</a>
           </div>
@@ -583,7 +583,7 @@ nav_order: 2
                 <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test2.pdf' | relative_url }}" target="_blank">Test 2 - Parts 1 to 9</a></li>
                 <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest3.pdf' | relative_url }}" target="_blank">Short Test 3 - Part 10</a></li>
                 <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test3.pdf' | relative_url }}" target="_blank">Test 3 - Parts 1 to 11</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_TestSub.pdf' | relative_url }}" target="_blank">Replacement Test - Parts 1 to 11</a></li>
+                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_TestSub.pdf' | relative_url }}" target="_blank">Substitute Test - Parts 1 to 11</a></li>
               </ul>
             </div>
             
