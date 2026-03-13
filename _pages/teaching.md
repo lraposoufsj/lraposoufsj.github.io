@@ -1,675 +1,751 @@
 ---
 layout: page
-permalink: /teaching/
+permalink: /Teaching/
 title: Teaching
-description: Courses, materials, and teaching experience
+description: Course materials for current and previous students
 nav: true
 nav_order: 2
 ---
 
 <style>
-.teaching-container {
+.teaching-wrap { padding: 0.5rem 0 3rem; }
+
+/* ── search & filters ── */
+.search-row {
   display: flex;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.toc-sidebar {
-  position: sticky;
-  top: 2rem;
-  width: 250px;
-  height: fit-content;
-  padding: 1.5rem;
-  background: var(--global-bg-color);
-  border: 1px solid var(--global-divider-color);
-  border-radius: 6px;
-}
-
-.toc-sidebar h3 {
-  margin-top: 0;
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  color: var(--global-text-color);
-}
-
-.toc-sidebar ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.toc-sidebar li {
-  margin-bottom: 0.5rem;
-}
-
-.toc-sidebar a {
-  color: var(--global-theme-color);
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: all 0.2s;
-}
-
-.toc-sidebar a:hover {
-  color: var(--global-hover-color);
-  padding-left: 0.5rem;
-}
-
-.teaching-content {
-  flex: 1;
-  min-width: 0;
-}
-
-.institution-section {
-  margin-bottom: 3rem;
-}
-
-.institution-header {
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: var(--global-text-color);
-  border-bottom: 2px solid var(--global-divider-color);
-  padding-bottom: 0.5rem;
-}
-
-.semester-group {
-  margin-bottom: 2.5rem;
-}
-
-.semester-header {
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: var(--global-theme-color);
-  margin-bottom: 1rem;
-  margin-top: 1.5rem;
-}
-
-.course-card {
-  padding: 1.25rem;
-  margin-bottom: 1rem;
-  background: var(--global-bg-color);
-  border: 1px solid var(--global-divider-color);
-  border-radius: 6px;
-  transition: all 0.2s;
-}
-
-.course-card:hover {
-  border-color: var(--global-theme-color);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.course-title {
-  font-size: 1.15rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: var(--global-text-color);
-}
-
-.course-code {
-  color: var(--global-theme-color);
-  font-family: monospace;
-  font-size: 0.9rem;
-}
-
-.course-role {
-  color: var(--global-text-color-light);
-  font-style: italic;
-  margin-bottom: 0.75rem;
-}
-
-.course-description {
-  margin-bottom: 0.75rem;
-  color: var(--global-text-color);
-  line-height: 1.6;
-}
-
-.course-links {
-  display: flex;
-  gap: 1rem;
+  gap: 8px;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
 }
-
-.course-link {
-  display: inline-block;
-  padding: 0.4rem 0.8rem;
-  background: var(--global-theme-color);
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  transition: all 0.2s;
+.search-row input {
+  flex: 1;
+  min-width: 200px;
+  padding: 8px 14px;
+  font-size: 14px;
+  border: 0.5px solid var(--global-divider-color);
+  border-radius: 8px;
+  background: var(--global-bg-color);
+  color: var(--global-text-color);
+  outline: none;
+  font-family: inherit;
 }
-
-.course-link:hover {
-  background: var(--global-hover-color);
-  color: white;
-  transform: translateY(-2px);
+.search-row input:focus {
+  border-color: var(--global-theme-color);
 }
-
-.materials-toggle {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background: var(--global-code-bg-color);
-  border: 1px solid var(--global-divider-color);
-  border-radius: 4px;
+.filter-btn {
+  padding: 7px 14px;
+  font-size: 13px;
+  border: 0.5px solid var(--global-divider-color);
+  border-radius: 8px;
+  background: var(--global-bg-color);
+  color: var(--global-text-color-light);
   cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+.filter-btn:hover { border-color: var(--global-theme-color); color: var(--global-theme-color); }
+.filter-btn.active {
+  background: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ── section labels ── */
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  margin-bottom: 1rem;
+}
+
+/* ── grid ── */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+
+/* ── cards ── */
+.course-card {
+  background: var(--global-bg-color);
+  border: 0.5px solid var(--global-divider-color);
+  border-radius: 12px;
+  padding: 1.1rem 1.25rem;
+  transition: border-color 0.15s;
+}
+.course-card:hover { border-color: var(--global-theme-color); }
+.course-card.current { border-color: var(--global-theme-color); border-width: 1px; }
+.course-card.hidden { display: none; }
+
+.card-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  transition: all 0.2s;
-}
-
-.materials-toggle:hover {
-  background: var(--global-divider-color);
-}
-
-.materials-toggle-icon {
-  transition: transform 0.3s;
-}
-
-.materials-toggle-icon.open {
-  transform: rotate(180deg);
-}
-
-.materials-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-out;
-}
-
-.materials-content.open {
-  max-height: 2500px;
-  transition: max-height 0.5s ease-in;
-}
-
-.materials-section {
-  margin-top: 1rem;
-  padding: 1rem;
-  background: var(--global-code-bg-color);
-  border-radius: 4px;
-}
-
-.materials-section h4 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-  color: var(--global-theme-color);
-}
-
-.materials-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.materials-list li {
+  align-items: flex-start;
   margin-bottom: 0.5rem;
+  gap: 8px;
 }
-
-.materials-list a {
-  color: var(--global-text-color);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  padding: 0.4rem 0.6rem;
-  border-radius: 3px;
-  transition: all 0.2s;
-}
-
-.materials-list a:hover {
-  background: var(--global-bg-color);
+.course-code {
+  font-size: 11px;
+  font-weight: 600;
   color: var(--global-theme-color);
+  background: color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+  padding: 2px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.sem-badge {
+  font-size: 11px;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+  padding-top: 2px;
+}
+.course-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--global-text-color);
+  line-height: 1.4;
+  margin-bottom: 2px;
+}
+.course-meta {
+  font-size: 12px;
+  color: var(--global-text-color-light);
+  margin-bottom: 1rem;
 }
 
-.materials-list a::before {
-  content: "📄";
-  margin-right: 0.5rem;
+/* ── material chips ── */
+.mat-group { margin-bottom: 0.6rem; }
+.mat-group-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--global-text-color-light);
+  margin-bottom: 4px;
+}
+.mat-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.mat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  padding: 3px 10px;
+  border: 0.5px solid var(--global-divider-color);
+  border-radius: 6px;
+  color: var(--global-text-color);
+  background: var(--global-card-bg-color, var(--global-bg-color));
+  text-decoration: none;
+  transition: all 0.15s;
+}
+.mat-chip:hover {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+.mat-chip.soon {
+  opacity: 0.38;
+  pointer-events: none;
+}
+.chip-icon { font-size: 11px; }
+
+.section-divider {
+  border: none;
+  border-top: 0.5px solid var(--global-divider-color);
+  margin: 0.5rem 0 1.75rem;
 }
 
-@media (max-width: 768px) {
-  .teaching-container {
-    flex-direction: column;
-  }
-  
-  .toc-sidebar {
-    position: relative;
-    width: 100%;
-    top: 0;
-  }
+.no-results {
+  display: none;
+  color: var(--global-text-color-light);
+  font-size: 14px;
+  padding: 2rem 0;
 }
 </style>
 
-<div class="teaching-container">
-  <aside class="toc-sidebar">
-    <h3>Quick Navigation</h3>
-    <ul>
-      <li>
-        <a href="#ufsj">UFSJ (2025 - Present)</a>
-        <ul>
-          <li><a href="#ufsj-2025-2">2025/2</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#unifei">UNIFEI (2024/25)</a>
-        <ul>
-          <li><a href="#unifei-2025-1">2025/1</a></li>
-          <li><a href="#unifei-2024-4">2024/4 (Summer Course)</a></li>
-          <li><a href="#unifei-2024-2">2024/2</a></li>
-        </ul>
-      </li>
-    </ul>
-  </aside>
+<div class="teaching-wrap">
 
-  <div class="teaching-content">
-    
-    <!-- Current Position -->
-    <section id="ufsj" class="institution-section">
-      <h2 class="institution-header">Federal University of São João del Rei (UFSJ)</h2>
-      <p><strong>Assistant Professor</strong> | 2025 - Present</p>
-      
-      <div class="semester-group">
-        <h3 class="semester-header" id="ufsj-2025-2">2025/2</h3>
-        
-        <div class="course-card">
-          <div class="course-title">
-            <span class="course-code">QU03819740</span> - Experimental Biochemistry
-          </div>
-          <div class="course-role">Assistant Professor</div>
-          <div class="course-description">
-            Foundational course covering essential laboratory techniques in Biochemistry, such as the extraction and chemical analysis of starch, coconut oil, soybean protein, DNA, and SDS-PAGE techniques.
-          </div>
-          <div class="course-links">
-            <a href="{{ '/assets/pdf/ufsj/2025-2/BQE_20252_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
-            <a href="{{ '/assets/pdf/ufsj/2025-2/BQE_20252_Exp_Prot.pdf' | relative_url }}" target="_blank" class="course-link">🧪 Experiments</a>
-            <a href="#" class="course-link">💯 Test 1</a>
-            <a href="#" class="course-link">💯 Test 2</a>
-            <a href="#" class="course-link">💯 Substitute Test</a>
-          </div>
-        </div>
-
-        <div class="course-card">
-          <div class="course-title">
-            <span class="course-code">QU03419695</span> - Introduction to the Organic Chemistry Laboratory
-          </div>
-          <div class="course-role">Assistant Professor</div>
-          <div class="course-description">
-            Foundational course covering essential laboratory techniques in Organic Chemistry, such as liquid-liquid extraction, distillation, chromatography, recrystallization, aliphatic carbon and carbonyl substitutions, diazotization reactions, and functional group identification.
-          </div>
-          <div class="course-links">
-            <a href="{{ '/assets/pdf/ufsj/2025-2/ILQO_20252_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
-            <a href="{{ '/assets/pdf/ufsj/2025-2/ILQO_20252_Exp_Prot.pdf' | relative_url }}" target="_blank" class="course-link">🧪 Experiments</a>
-            <a href="#" class="course-link">💯 Test 1</a>
-            <a href="#" class="course-link">💯 Test 2</a>
-            <a href="#" class="course-link">💯 Substitute Test</a>
-          </div>
-        </div>
-
-        <div class="course-card">
-          <div class="course-title">
-            <span class="course-code">QU03319694</span> - Physical Methods in Organic Chemistry
-          </div>
-          <div class="course-role">Assistant Professor</div>
-          <div class="course-description">
-            Foundational course covering essential structure elucidation techniques for organic compounds, such as infrared (IR) and nuclear magnetic resonance (NMR) spectroscopies, and mass spectrometry (MS).
-          </div>
-          <div class="course-links">
-            <a href="{{ '/assets/pdf/ufsj/2025-2/MFQO_20252_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
-          </div>
-
-          <!-- Expandable Materials Section -->
-          <div class="materials-toggle" onclick="toggleMaterials(this)">
-            <span><strong>📂 Course Materials</strong></span>
-            <span class="materials-toggle-icon">▼</span>
-          </div>
-          <div class="materials-content">
-            <div class="materials-section">
-              <h4>📖 Lecture Notes and Slides</h4>
-              <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/ufsj/2025-2/MFQO_20252_Slides_Mod1.pdf' | relative_url }}" target="_blank">Part 01 - Mass Spectrometry (MS)</a></li>
-                <li><a href="#" target="_blank">Part 02 - Infrared Spectroscopy (IR)</a></li>
-                <li><a href="#" target="_blank">Part 03 - Nuclear Magnetic Resonance Spectroscopy (NMR)</a></li>
-              </ul>
-            </div>
-            
-            <div class="materials-section">
-              <h4>📝 Exams and Tests</h4>
-              <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/ufsj/2025-2/MFQO_20252_Test1.pdf' | relative_url }}" target="_blank">Test 1 - MS</a></li>
-                <li><a href="#" target="_blank">Test 2 - MS and IR</a></li>
-                <li><a href="#" target="_blank">Test 3 - MS, IR, and NMR</a></li>
-                <li><a href="#" target="_blank">Substitute Test</a></li>
-              </ul>
-            </div>
-            
-            <div class="materials-section">
-              <h4>💻 Exercises</h4>
-              <ul class="materials-list">
-                <li><a href="#" target="_blank">Assignment 1 - Implementing a Linked List</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="course-card">
-          <div class="course-title">
-            <span class="course-code">CNA0001</span> - General Chemistry for Engineering
-          </div>
-          <div class="course-role">Assistant Professor</div>
-          <div class="course-description">
-            Shared foundational course covering essential Chemistry-related topics. Topics include stoichiometry, thermochemistry, chemical equilibrium, chemical kinetics, and electrochemistry.
-          </div>
-          <div class="course-links">
-            <a href="#" class="course-link">📝 Syllabus</a>
-            <a href="#" class="course-link">💻 Materials</a>
-            <a href="#" class="course-link">💯 Test 1</a>
-            <a href="#" class="course-link">💯 Test 2</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Previous Position -->
-    <section id="unifei" class="institution-section">
-      <h2 class="institution-header">Federal University of Itajubá (UNIFEI)</h2>
-      <p><strong>Substitute Professor</strong> | 2024/25</p>
-      
-      <div class="semester-group">
-        <h3 class="semester-header" id="unifei-2025-1">2025/1</h3>
-        
-        <div class="course-card">
-          <div class="course-title">
-            <span class="course-code">QUI016</span> - General Chemistry
-          </div>
-          <div class="course-role">Substitute Professor</div>
-          <div class="course-description">
-            Foundational course for Chemical and Bioprocesses Engineering, and Biology, covering atomic theory and electronic structure, chemical bonds, gases, liquids and solutions, thermodynamics, chemical kinetics, and electrochemistry.
-          </div>
-          <div class="course-links">
-            <a href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
-          </div>
-
-          <!-- Expandable Materials Section -->
-          <div class="materials-toggle" onclick="toggleMaterials(this)">
-            <span><strong>📂 Course Materials</strong></span>
-            <span class="materials-toggle-icon">▼</span>
-          </div>
-          <div class="materials-content">
-            <div class="materials-section">
-              <h4>📖 Lecture Notes and Slides</h4>
-              <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_Lecture_Notes_M1.pdf' | relative_url }}" target="_blank">Part 1 - UV-Vis Spectroscopy</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M2.pdf' | relative_url }}" target="_blank">Part 2 - Infrared Spectroscopy</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p1.pdf' | relative_url }}" target="_blank">Part 3A - NMR (Introduction and Concepts)</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p2.pdf' | relative_url }}" target="_blank">Part 3B - NMR (Proton NMR)</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p3.pdf' | relative_url }}" target="_blank">Part 3C - NMR (Carbon-13 NMR)</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p4.pdf' | relative_url }}" target="_blank">Part 3D - NMR (J coupling and 2D NMR)</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M4.pdf' | relative_url }}" target="_blank">Part 4 - Mass Spectrometry</a></li>
-              </ul>
-            </div>
-            
-            <div class="materials-section">
-              <h4>📝 Exams and Tests</h4>
-              <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_ShortTest1.pdf' | relative_url }}" target="_blank">Short Test 1 - Part 2</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_Test1.pdf' | relative_url }}" target="_blank">Test 1 - Parts 1 to 4</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_ShortTest2.pdf' | relative_url }}" target="_blank">Short Test 2 - Part 5</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_Test2.pdf' | relative_url }}" target="_blank">Test 2 - Parts 6, 7, and 9</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_Test_Sub.pdf' | relative_url }}" target="_blank">Substitute Test - Parts 1 to 4, 6, 7, and 9</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="course-card">
-          <div class="course-title">
-            <span class="course-code">QUI017</span> - Experimental General Chemistry
-          </div>
-          <div class="course-role">Substitute Professor</div>
-          <div class="course-description">
-            Foundational course for Chemistry and Chemical Engineering, covering macroscopic evidence of chemical reactions, stoichiometry, standardization, the copper cycle, chemical kinetics, chemical equilibrium, precipitation reactions, and electrochemistry.
-          </div>
-          <div class="course-links">
-            <a href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
-            <a href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Exp_prot.pdf' | relative_url }}" target="_blank" class="course-link">🧪 Experiments</a>
-            <a href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Test1.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 1</a>
-            <a href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Test2.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 2</a>
-          </div>
-        </div>
-
-        <div class="course-card">
-          <div class="course-title">
-            <span class="course-code">QUI070</span> - Physical Methods for Analysis
-          </div>
-          <div class="course-role">Substitute Professor</div>
-          <div class="course-description">
-            Foundational course for Chemistry covering essential spectroscopic and spectrometric tools for the analysis of Organic Compounds, such as UV-Vis, FTIR, MS, and NMR.
-          </div>
-          <div class="course-links">
-            <a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
-          </div>
-
-          <!-- Expandable Materials Section -->
-          <div class="materials-toggle" onclick="toggleMaterials(this)">
-            <span><strong>📂 Course Materials</strong></span>
-            <span class="materials-toggle-icon">▼</span>
-          </div>
-          <div class="materials-content">
-            <div class="materials-section">
-              <h4>📖 Lecture Notes and Slides</h4>
-              <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Lecture_Notes_M1.pdf' | relative_url }}" target="_blank">Part 1 - UV-Vis Spectroscopy</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M2.pdf' | relative_url }}" target="_blank">Part 2 - Infrared Spectroscopy</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p1.pdf' | relative_url }}" target="_blank">Part 3A - NMR (Introduction and Concepts)</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p2.pdf' | relative_url }}" target="_blank">Part 3B - NMR (Proton NMR)</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p3.pdf' | relative_url }}" target="_blank">Part 3C - NMR (Carbon-13 NMR)</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p4.pdf' | relative_url }}" target="_blank">Part 3D - NMR (J coupling and 2D NMR)</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M4.pdf' | relative_url }}" target="_blank">Part 4 - Mass Spectrometry</a></li>
-              </ul>
-            </div>
-            
-            <div class="materials-section">
-              <h4>📝 Exams and Tests</h4>
-              <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Test1.pdf' | relative_url }}" target="_blank">Test 1 - Parts 1 and 2</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Test2.pdf' | relative_url }}" target="_blank">Test 2 - Parts 1 to 3</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Test3.pdf' | relative_url }}" target="_blank">Test 3 - Parts 1 to 4</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Test_Sub.pdf' | relative_url }}" target="_blank">Substitute Test - Parts 1 to 4</a></li>
-              </ul>
-            </div>
-
-            <div class="materials-section">
-              <h4>💻 Exercises</h4>
-              <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Solved_ex_M3.pdf' | relative_url }}" target="_blank">Solved Exercises - NMR Spectroscopy</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="course-card">
-          <div class="course-title">
-            <span class="course-code">QUI212</span> - Experimental General Chemistry
-          </div>
-          <div class="course-role">Substitute Professor</div>
-          <div class="course-description">
-            Foundational course covering essential experimental aspects of Chemistry for Engineering courses, covering macroscopical evidence of chemical reactions, chemical equilibrium, chemical thermodynamics, and electrochemistry.
-          </div>
-          <div class="course-links">
-            <a href="{{ '/assets/pdf/unifei/2025-1/QUI212_20251_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
-            <a href="{{ '/assets/pdf/unifei/2025-1/QUI212_20251_Test1.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 1</a>
-            <a href="{{ '/assets/pdf/unifei/2025-1/QUI212_20251_Test2.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 2</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="semester-group">
-        <h3 class="semester-header" id="unifei-2024-4">2024/4 (Summer Course)</h3>
-        
-        <div class="course-card">
-          <div class="course-title">
-            <span class="course-code">QUI055</span> - Organic Chemistry II
-          </div>
-          <div class="course-role">Substitute Professor</div>
-          <div class="course-description">
-            Foundational course taught during Jan/2025 covering substitution and elimination reactions, reactions of alkenes and alkynes, reactions of aromatic compounds, reactions of alcohols and ethers (including oxidation and reduction processes), organometallic chemistry, and carboxylic acid derivatives and their reactions.
-          </div>
-          <div class="course-links">
-            <a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
-          </div>
-
-          <!-- Expandable Materials Section -->
-          <div class="materials-toggle" onclick="toggleMaterials(this)">
-            <span><strong>📂 Course Materials</strong></span>
-            <span class="materials-toggle-icon">▼</span>
-          </div>
-          <div class="materials-content">
-            <div class="materials-section">
-              <h4>📖 Lecture Notes and Slides</h4>
-              <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Slides_M1.pdf' | relative_url }}" target="_blank">Part 1 - Alkenes and alkynes</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Slides_M2.pdf' | relative_url }}" target="_blank">Part 2 - Alkene addition reactions</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Slides_M3.pdf' | relative_url }}" target="_blank">Part 3 - Conjugated alkenes</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Lecture_Notes_M4.pdf' | relative_url }}" target="_blank">Part 4 - Aromatic compounds</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Lecture_Notes_M5.pdf' | relative_url }}" target="_blank">Part 5 - Alcohols and Ethers</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Lecture_Notes_M6.pdf' | relative_url }}" target="_blank">Part 6 - Oxidations, reductions, and RLi/RMgX</a></li>
-              </ul>
-            </div>
-            
-            <div class="materials-section">
-              <h4>📝 Exams and Tests</h4>
-              <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test1.pdf' | relative_url }}" target="_blank">Test 1 - Parts 1 and 2</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test2.pdf' | relative_url }}" target="_blank">Test 2 - Parts 1 to 4</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test3.pdf' | relative_url }}" target="_blank">Test 3 - Parts 1 to 5</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test4.pdf' | relative_url }}" target="_blank">Test 4 - Parts 1 to 7</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="semester-group">
-        <h3 class="semester-header" id="unifei-2024-2">2024/2</h3>
-
-        <div class="course-card">
-          <div class="course-title">
-            <span class="course-code">QUI022</span> - Organic Chemistry
-          </div>
-          <div class="course-role">Substitute Professor</div>
-          <div class="course-description">
-            Foundational course covering essential theoretical aspects of Organic Chemistry for Chemical and Materials Engineering, such as organic acids and bases, bond theory and conjugation, physical and chemical properties of organic compounds, radical reactions, electrophilic aromatic substitution reactions, and carboxyl condensation reactions.
-          </div>
-          <div class="course-links">
-            <a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
-          </div>
-
-          <!-- Expandable Materials Section -->
-          <div class="materials-toggle" onclick="toggleMaterials(this)">
-            <span><strong>📂 Course Materials</strong></span>
-            <span class="materials-toggle-icon">▼</span>
-          </div>
-          <div class="materials-content">
-            <div class="materials-section">
-              <h4>📖 Lecture Notes</h4>
-              <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M1.pdf' | relative_url }}" target="_blank">Part 1 - Representation and Bond Theory</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M2.pdf' | relative_url }}" target="_blank">Part 2 - Inductive and Mesomeric Effect</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M3.pdf' | relative_url }}" target="_blank">Part 3 - Functional Groups</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M4.pdf' | relative_url }}" target="_blank">Part 4 - Nomenclature</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M5.pdf' | relative_url }}" target="_blank">Part 5 - Physical and Chemical Properties</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M6.pdf' | relative_url }}" target="_blank">Part 6 - Acids and Bases</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M7.pdf' | relative_url }}" target="_blank">Part 7 - Stereochemistry</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M8.pdf' | relative_url }}" target="_blank">Part 8 - Radical Reactions</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M9.pdf' | relative_url }}" target="_blank">Part 9 - Alkene Addition Reactions</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M10.pdf' | relative_url }}" target="_blank">Part 10 - Electrophilic Aromatic Substitution Reactions</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M11.pdf' | relative_url }}" target="_blank">Part 11 - Carbonyl Substitution and Addition Reactions</a></li>
-              </ul>
-            </div>
-            
-            <div class="materials-section">
-              <h4>📝 Exams and Tests</h4>
-              <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest1.pdf' | relative_url }}" target="_blank">Short Test 1 - Part 2</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test1.pdf' | relative_url }}" target="_blank">Test 1 - Parts 1 to 5</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest2.pdf' | relative_url }}" target="_blank">Short Test 2 - Part 8</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test2.pdf' | relative_url }}" target="_blank">Test 2 - Parts 1 to 9</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest3.pdf' | relative_url }}" target="_blank">Short Test 3 - Part 10</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test3.pdf' | relative_url }}" target="_blank">Test 3 - Parts 1 to 11</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_TestSub.pdf' | relative_url }}" target="_blank">Substitute Test - Parts 1 to 11</a></li>
-              </ul>
-            </div>
-            
-            <div class="materials-section">
-              <h4>💻 Exercises</h4>
-              <ul class="materials-list">
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_List1.pdf' | relative_url }}" target="_blank">Exercise List 1 - Parts 1 to 5</a></li>
-                <li><a href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_List2.pdf' | relative_url }}" target="_blank">Exercise List 2 - Parts 6 to 9</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="course-card">
-          <div class="course-title">
-            <span class="course-code">QUI068</span> - Experimental Organic Chemistry
-          </div>
-          <div class="course-role">Substitute Professor</div>
-          <div class="course-description">
-            Foundational course covering essential experimental aspects of Organic Chemistry for Chemical and Materials Engineering, such as liquid-liquid extraction, chromatography (TLC and silica column), production of ASA, and recrystalization.
-          </div>
-          <div class="course-links">
-            <a href="{{ '/assets/pdf/unifei/2024-2/QUI068_20242_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
-            <a href="{{ '/assets/pdf/unifei/2024-2/QUI068_20242_Exp_Prot.pdf' | relative_url }}" target="_blank" class="course-link">🧪 Experiments</a>
-            <a href="{{ '/assets/pdf/unifei/2024-2/QUI068_20242_Test1.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 1</a>
-            <a href="{{ '/assets/pdf/unifei/2024-2/QUI068_20242_Test2.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 2</a>
-          </div>
-        </div>
-
-        <div class="course-card">
-          <div class="course-title">
-            <span class="course-code">QUI113</span> - Experimental Chemistry
-          </div>
-          <div class="course-role">Substitute Professor</div>
-          <div class="course-description">
-            Foundational course covering essential experimental aspects of Chemistry for Physics, Biology, and Bioprocess Engineering courses, covering macroscopical evidence of chemical reactions, stoichiometry, standardization, chemical kinetics, and chemical equilibrium.
-          </div>
-          <div class="course-links">
-            <a href="{{ '/assets/pdf/unifei/2024-2/QUI113_20242_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
-            <a href="{{ '/assets/pdf/unifei/2024-2/QUI113_20242_Exp_Prot.pdf' | relative_url }}" target="_blank" class="course-link">🧪 Experiments</a>
-            <a href="{{ '/assets/pdf/unifei/2024-2/QUI113_20242_Test1.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 1</a>
-            <a href="{{ '/assets/pdf/unifei/2024-2/QUI113_20242_Test2.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 2</a>
-          </div>
-        </div>
-
-        <div class="course-card">
-          <div class="course-title">
-            <span class="course-code">QUI212</span> - Experimental General Chemistry
-          </div>
-          <div class="course-role">Substitute Professor</div>
-          <div class="course-description">
-            Foundational course covering essential experimental aspects of Chemistry for Engineering courses, covering macroscopical evidence of chemical reactions, chemical equilibrium, chemical thermodynamics, and electrochemistry.
-          </div>
-          <div class="course-links">
-            <a href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Syllabus.pdf' | relative_url }}" target="_blank" class="course-link">📝 Syllabus</a>
-            <a href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Exp_Prot.pdf' | relative_url }}" target="_blank" class="course-link">🧪 Experiments</a>
-            <a href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Test1.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 1</a>
-            <a href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Test1_2.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 1 (2nd class)</a>
-            <a href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Test2.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 2</a>
-            <a href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Test2_2.pdf' | relative_url }}" target="_blank" class="course-link">💯 Test 2 (2nd class)</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    
+  <!-- Search & filter bar -->
+  <div class="search-row">
+    <input type="text" id="course-search" placeholder="Search by course name, code, or topic…" oninput="filterCourses()" />
+    <button class="filter-btn active" onclick="setFilter('all', this)">All</button>
+    <button class="filter-btn" onclick="setFilter('ufsj', this)">UFSJ</button>
+    <button class="filter-btn" onclick="setFilter('unifei', this)">UNIFEI</button>
   </div>
+
+  <!-- Current semester -->
+  <p class="section-label" id="label-current">Current semester — UFSJ 2026/1</p>
+  <div class="course-grid" id="grid-current">
+
+    <!-- O Chem for Bio -->
+    <div class="course-card current" data-inst="ufsj" data-keywords="organic chemistry biology bonding stereochemistry conjugation conformation intermolecular qob CB00615546 2026 2026/1">
+      <div class="card-top">
+        <span class="course-code">CB00615546</span>
+        <span class="sem-badge">UFSJ 2026/1</span>
+      </div>
+      <div class="course-title">Organic Chemistry for Biological Sciences</div>
+      <div class="course-meta">Assistant Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/QOB_20261_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Lecture notes</div>
+        <div class="mat-chips">
+          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 1 — Chemical Bonding</a>
+          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 2 — Intermolecular Forces</a>
+          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 3 — Conjugation</a>
+          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 4 — Nomenclature and Organic Functions</a>
+          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 5 — Conformational Analysis and Projections</a>
+          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 6 — Stereochemistry</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 1 — Parts 1 and 2</a>
+          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 2 — Parts 3 and 4</a>
+          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 3 — Parts 5 and 6</a>
+          <a class="mat-chip soon"><span class="chip-icon">📝</span> Substitute Test</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gen Chem for Bio -->
+    <div class="course-card current" data-inst="ufsj" data-keywords="general chemistry biology bonding inorganic nomenclature solution equilibrium acids bases pH qgb CB00515545 2026 2026/1">
+      <div class="card-top">
+        <span class="course-code">CB00515545</span>
+        <span class="sem-badge">UFSJ 2026/1</span>
+      </div>
+      <div class="course-title">General Chemistry for Biological Sciences</div>
+      <div class="course-meta">Assistant Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/QGB_20261_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Lecture notes</div>
+        <div class="mat-chips">
+          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 1 — Chemical Bonding</a>
+          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 2 — Inorganic Functions</a>
+          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 3 — Solution Chemistry</a>
+          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 4 — Chemical Equilibrium</a>
+          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 5 — Acids, bases, and pH</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 1 — Parts 1 and 2</a>
+          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 2 — Part 3</a>
+          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 3 — Parts 4 and 5</a>
+          <a class="mat-chip soon"><span class="chip-icon">📝</span> Substitute Test</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- OChem 3 -->
+    <div class="course-card current" data-inst="ufsj" data-keywords="physical methods organic chemistry spectroscopy nmr ir ms qo3 QU02419742 2026 2026/1">
+      <div class="card-top">
+        <span class="course-code">QU02419742</span>
+        <span class="sem-badge">UFSJ 2026/1</span>
+      </div>
+      <div class="course-title">Organic Chemistry III</div>
+      <div class="course-meta">Assistant Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/ORG3_20261_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Lecture notes</div>
+        <div class="mat-chips">
+          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 1 — UV Spectroscopy</a>
+          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 2 — Infrared Spectroscopy</a>
+          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 3 — NMR Spectroscopy</a>
+          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 4 — Mass Spectrometry</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 1 — Parts 1 and 2</a>
+          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 2 — Parts 1 to 3</a>
+          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 3 — Parts 1 to 4</a>
+          <a class="mat-chip soon"><span class="chip-icon">📝</span> Substitute Test</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gen Chem Exp 1 -->
+    <div class="course-card current" data-inst="ufsj" data-keywords="general chemistry laboratory experimental glassware report scientific density calibration flame evidence reaction chemical melting point napththalene alcohol gasoline mixture separation salt synthesis formula hydrated determination qexp1 QU00519628 2026 2026/1">
+      <div class="card-top">
+        <span class="course-code">QU00519628 </span>
+        <span class="sem-badge">UFSJ 2026/1</span>
+      </div>
+      <div class="course-title">Experimental General Chemistry I</div>
+      <div class="course-meta">Assistant Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/QGE1_20261_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+          <a class="mat-chip soon"><span class="chip-icon">🧪</span> Experiments</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 1</a>
+          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 2</a>
+          <a class="mat-chip soon"><span class="chip-icon">📝</span> Substitute Test</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- Previous courses -->
+  <p class="section-label" id="label-previous">Previous courses</p>
+  <div class="course-grid" id="grid-previous">
+
+    <!-- Physical Methods -->
+    <div class="course-card" data-inst="ufsj" data-keywords="physical methods organic chemistry spectroscopy nmr ir ms mfqo qu03319694 2025 2025/2">
+      <div class="card-top">
+        <span class="course-code">QU03319694</span>
+        <span class="sem-badge">UFSJ 2025/2</span>
+      </div>
+      <div class="course-title">Physical Methods in Organic Chemistry</div>
+      <div class="course-meta">Assistant Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/MFQO_20252_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Lecture slides</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/MFQO_20252_Slides_Mod1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 1 — Mass Spectrometry</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/MFQO_20252_Slides_Mod2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 2 — Infrared Spectroscopy</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/MFQO_20252_Slides_Mod3.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 3 — NMR Spectroscopy</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/MFQO_20252_Test1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1 — MS</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/MFQO_20252_Test2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 2 — MS and IR</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/MFQO_20252_TestSub.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Substitute Test</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Intro Organic Lab -->
+    <div class="course-card" data-inst="ufsj" data-keywords="introduction organic chemistry laboratory experimental ilqo qu03419695 2025 2025/2">
+      <div class="card-top">
+        <span class="course-code">QU03419695</span>
+        <span class="sem-badge">UFSJ 2025/2</span>
+      </div>
+      <div class="course-title">Introduction to the Organic Chemistry Laboratory</div>
+      <div class="course-meta">Assistant Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/ILQO_20252_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/ILQO_20252_Exps.pdf' | relative_url }}" target="_blank"><span class="chip-icon">🧪</span> Experiments</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/ILQO_20252_Test1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/ILQO_20252_Test2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 2</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/ILQO_20252_TestSub.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Substitute Test</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experimental Biochemistry -->
+    <div class="course-card" data-inst="ufsj" data-keywords="experimental biochemistry bqe qu03819740 starch dna sds-page 2025 2025/2">
+      <div class="card-top">
+        <span class="course-code">QU03819740</span>
+        <span class="sem-badge">UFSJ 2025/2</span>
+      </div>
+      <div class="course-title">Experimental Biochemistry</div>
+      <div class="course-meta">Assistant Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/BQE_8P_20252_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/BQE_Apostila_v2024.pdf' | relative_url }}" target="_blank"><span class="chip-icon">🧪</span> Experiments</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/BQE_20252_Test1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/BQE_20252_Test2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1a</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/BQE_20252_Test3.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 2</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- General Chemistry for Engineering -->
+    <div class="course-card" data-inst="ufsj" data-keywords="general chemistry engineering cna0001 stoichiometry thermochemistry equilibrium kinetics electrochemistry 2025 2025/2">
+      <div class="card-top">
+        <span class="course-code">CNA0001</span>
+        <span class="sem-badge">UFSJ 2025/2</span>
+      </div>
+      <div class="course-title">General Chemistry for Engineering</div>
+      <div class="course-meta">Assistant Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/QG_20252_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Lecture slides</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/QG_20252_Slides_Mod5.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 1 — Chemical Reactions and Stoichiometry</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/QG_20252_Slides_Mod6.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 2 — Thermochemistry</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/QG_20252_Slides_Mod7.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 3 — Chemical Kinetics</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/QG_20252_Slides_Mod8.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 4 — Chemical Equilibrium</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/QG_20252_Slides_Mod9.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 5 — Electrochemistry</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/QG_20252_Test3.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1 (3)</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/QG_20252_Test4.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 2 (4)</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2025-2/QG_20252_TestSub.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Substitute Test</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUI070 Physical Methods UNIFEI 2025/1 -->
+    <div class="course-card" data-inst="unifei" data-keywords="physical methods analysis spectroscopy uv-vis ir nmr ms qui070 unifei 2025 2025/1">
+      <div class="card-top">
+        <span class="course-code">QUI070</span>
+        <span class="sem-badge">UNIFEI 2025/1</span>
+      </div>
+      <div class="course-title">Physical Methods for Analysis</div>
+      <div class="course-meta">Substitute Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Lecture slides</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Lecture_Notes_M1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 1 — UV-Vis</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 2 — IR</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 3A — NMR intro</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 3B — ¹H NMR</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p3.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 3C — ¹³C NMR</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M3_p4.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 3D — J coupling & 2D NMR</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Slides_M4.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 4 — Mass Spectrometry</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Test1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Test2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 2</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Test3.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 3</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Test_Sub.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Substitute Test</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Exercises</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI070_20251_Solved_ex_M3.pdf' | relative_url }}" target="_blank"><span class="chip-icon">✏️</span> Solved NMR exercises</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUI016 General Chemistry UNIFEI 2025/1 -->
+    <div class="course-card" data-inst="unifei" data-keywords="general chemistry qui016 unifei 2025 atomic bonds gases solutions thermodynamics kinetics electrochemistry 2025/1">
+      <div class="card-top">
+        <span class="course-code">QUI016</span>
+        <span class="sem-badge">UNIFEI 2025/1</span>
+      </div>
+      <div class="course-title">General Chemistry</div>
+      <div class="course-meta">Substitute Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_ShortTest1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Short Test 1</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_Test1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_ShortTest2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Short Test 2</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_Test2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 2</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI016_20251_Test_Sub.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Substitute Test</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUI017 Experimental General Chemistry UNIFEI 2025/1 -->
+    <div class="course-card" data-inst="unifei" data-keywords="experimental general chemistry qui017 unifei 2025 stoichiometry kinetics equilibrium electrochemistry 2025/1">
+      <div class="card-top">
+        <span class="course-code">QUI017</span>
+        <span class="sem-badge">UNIFEI 2025/1</span>
+      </div>
+      <div class="course-title">Experimental General Chemistry</div>
+      <div class="course-meta">Substitute Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Exp_prot.pdf' | relative_url }}" target="_blank"><span class="chip-icon">🧪</span> Experiments</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Test1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI017_20251_Test2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 2</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUI212 Experimental General Chemistry UNIFEI 2025/1 -->
+    <div class="course-card" data-inst="unifei" data-keywords="experimental general chemistry engineering qui212 unifei 2025 equilibrium thermodynamics electrochemistry 2025/1">
+      <div class="card-top">
+        <span class="course-code">QUI212</span>
+        <span class="sem-badge">UNIFEI 2025/1</span>
+      </div>
+      <div class="course-title">Experimental General Chemistry (Engineering)</div>
+      <div class="course-meta">Substitute Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI212_20251_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI212_20251_Test1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2025-1/QUI212_20251_Test2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 2</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUI055 Organic Chemistry II UNIFEI 2024/4 summer -->
+    <div class="course-card" data-inst="unifei" data-keywords="organic chemistry ii qui055 unifei 2024 summer alkenes alkynes aromatic alcohols ethers organometallic 2024/4">
+      <div class="card-top">
+        <span class="course-code">QUI055</span>
+        <span class="sem-badge">UNIFEI 2024/4 (Summer)</span>
+      </div>
+      <div class="course-title">Organic Chemistry II</div>
+      <div class="course-meta">Substitute Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Lecture slides</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Slides_M1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 1 — Alkenes & alkynes</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Slides_M2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 2 — Alkene additions</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Slides_M3.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 3 — Conjugated alkenes</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Lecture_Notes_M4.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 4 — Aromatic compounds</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Lecture_Notes_M5.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 5 — Alcohols & ethers</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Lecture_Notes_M6.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 6 — Oxidations, reductions & RLi/RMgX</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 2</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test3.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 3</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-summer/QUI055_20244_Test4.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 4</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUI022 Organic Chemistry UNIFEI 2024/2 -->
+    <div class="course-card" data-inst="unifei" data-keywords="organic chemistry qui022 unifei 2024 acids bases conjugation aromatic substitution carbonyl 2024/4">
+      <div class="card-top">
+        <span class="course-code">QUI022</span>
+        <span class="sem-badge">UNIFEI 2024/2</span>
+      </div>
+      <div class="course-title">Organic Chemistry</div>
+      <div class="course-meta">Substitute Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Lecture notes</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 1 — Representation & bond theory</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 2 — Inductive & mesomeric effects</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M3.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 3 — Functional groups</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M4.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 4 — Nomenclature</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M5.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 5 — Physical & chemical properties</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M6.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 6 — Acids & bases</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M7.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 7 — Stereochemistry</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M8.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 8 — Radical reactions</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M9.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 9 — Alkene addition reactions</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M10.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 10 — Electrophilic aromatic substitution</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Lecture_Notes_M11.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 11 — Carbonyl substitution & addition</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Short Test 1</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Short Test 2</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 2</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_ShortTest3.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Short Test 3</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_Test3.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 3</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_TestSub.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Substitute Test</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Exercises</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_List1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">✏️</span> Exercise List 1</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI022_20242_List2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">✏️</span> Exercise List 2</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUI068 Experimental Organic Chemistry UNIFEI 2024/2 -->
+    <div class="course-card" data-inst="unifei" data-keywords="experimental organic chemistry qui068 unifei 2024 extraction chromatography tlc asa recrystallization">
+      <div class="card-top 2024/2">
+        <span class="course-code">QUI068</span>
+        <span class="sem-badge">UNIFEI 2024/2</span>
+      </div>
+      <div class="course-title">Experimental Organic Chemistry</div>
+      <div class="course-meta">Substitute Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI068_20242_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI068_20242_Exp_Prot.pdf' | relative_url }}" target="_blank"><span class="chip-icon">🧪</span> Experiments</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI068_20242_Test1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI068_20242_Test2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 2</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUI113 Experimental Chemistry UNIFEI 2024/2 -->
+    <div class="course-card" data-inst="unifei" data-keywords="experimental chemistry qui113 unifei 2024 stoichiometry standardization kinetics equilibrium biology physics bioprocess 2024/2">
+      <div class="card-top">
+        <span class="course-code">QUI113</span>
+        <span class="sem-badge">UNIFEI 2024/2</span>
+      </div>
+      <div class="course-title">Experimental Chemistry</div>
+      <div class="course-meta">Substitute Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI113_20242_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI113_20242_Exp_Prot.pdf' | relative_url }}" target="_blank"><span class="chip-icon">🧪</span> Experiments</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI113_20242_Test1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI113_20242_Test2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 2</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUI212 Experimental General Chemistry UNIFEI 2024/2 -->
+    <div class="course-card" data-inst="unifei" data-keywords="experimental general chemistry engineering qui212 unifei 2024 equilibrium thermodynamics electrochemistry 2024/2">
+      <div class="card-top">
+        <span class="course-code">QUI212</span>
+        <span class="sem-badge">UNIFEI 2024/2</span>
+      </div>
+      <div class="course-title">Experimental General Chemistry (Engineering)</div>
+      <div class="course-meta">Substitute Professor</div>
+      <div class="mat-group">
+        <div class="mat-group-label">Documents</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Exp_Prot.pdf' | relative_url }}" target="_blank"><span class="chip-icon">🧪</span> Experiments</a>
+        </div>
+      </div>
+      <div class="mat-group">
+        <div class="mat-group-label">Tests</div>
+        <div class="mat-chips">
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Test1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Test1_2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1 (2nd class)</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Test2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 2</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/unifei/2024-2/QUI212_20242_Test2_2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 2 (2nd class)</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="no-results" id="no-results">No courses match your search.</p>
+
 </div>
 
 <script>
-function toggleMaterials(element) {
-  const content = element.nextElementSibling;
-  const icon = element.querySelector('.materials-toggle-icon');
-  
-  content.classList.toggle('open');
-  icon.classList.toggle('open');
+var activeFilter = 'all';
+
+function setFilter(inst, btn) {
+  activeFilter = inst;
+  document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  filterCourses();
+}
+
+function filterCourses() {
+  var query = document.getElementById('course-search').value.toLowerCase().trim();
+  var cards = document.querySelectorAll('.course-card');
+  var visible = 0;
+
+  cards.forEach(function(card) {
+    var instMatch = activeFilter === 'all' || card.dataset.inst === activeFilter;
+    var keywords = (card.dataset.keywords + ' ' + card.querySelector('.course-title').textContent).toLowerCase();
+    var queryMatch = query === '' || keywords.indexOf(query) !== -1;
+    var show = instMatch && queryMatch;
+    card.classList.toggle('hidden', !show);
+    if (show) visible++;
+  });
+
+  var currentCards = document.querySelectorAll('#grid-current .course-card:not(.hidden)');
+  var previousCards = document.querySelectorAll('#grid-previous .course-card:not(.hidden)');
+  document.getElementById('label-current').style.display = currentCards.length ? '' : 'none';
+  document.getElementById('grid-current').style.display = currentCards.length ? '' : 'none';
+  document.querySelector('.section-divider').style.display = (currentCards.length && previousCards.length) ? '' : 'none';
+  document.getElementById('label-previous').style.display = previousCards.length ? '' : 'none';
+  document.getElementById('grid-previous').style.display = previousCards.length ? '' : 'none';
+  document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
 }
 </script>

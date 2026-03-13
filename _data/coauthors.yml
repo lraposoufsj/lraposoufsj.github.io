@@ -5,3 +5,31 @@
 "tavares":
   - firstname: ["Eder", "E.", "E. C.", "Eder do Couto"]
     url: https://scholar.google.com/citations?user=9K9DqygAAAAJ&hl=en&oi=ao
+
+"rocha":
+  - firstname: ["Willian", "W.", "W. R.", "Willian Ricardo"]
+    url: https://scholar.google.com/citations?user=47XXdhQAAAAJ&hl=en&oi=ao
+
+"diniz":
+  - firstname: ["Renata", "R."]
+    url: https://scholar.google.com/citations?user=A8Ojsr8AAAAJ&hl=en&oi=ao
+
+"resende":
+  - firstname: ["Jarbas", "J.", "J. M.", "Jarbas Magalhães"]
+    url: https://scholar.google.com/citations?user=V6KKdR8AAAAJ&hl=en&oi=ao
+
+"de lima":
+  - firstname: ["Guilherme", "G.", "G. F.", "Guilherme Ferreira"]
+    url: https://scholar.google.com/citations?user=l356ozUAAAAJ&hl=en&oi=ao
+
+"verly":
+  - firstname: ["Rodrigo", "R.", "R. M.", "Rodrigo Moreira"]
+    url: https://scholar.google.com/citations?user=h1FNQw4AAAAJ&hl=en&oi=ao
+
+"de lima":
+  - firstname: ["Maria", "M.", "M. E.", "Maria Elena"]
+    url: https://scholar.google.com/citations?user=RSQ_AaAAAAAJ&hl=en&oi=ao
+
+"moreira brito":
+  - firstname: ["Júlio", "J.", "J. C.", "Júlio César"]
+    url: https://scholar.google.com/citations?user=A60QUaIAAAAJ&hl=en&oi=ao  
