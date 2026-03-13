@@ -11,10 +11,10 @@ ninja.data = [{
     },
   },{id: "nav-teaching",
           title: "Teaching",
-          description: "Courses, materials, and teaching experience",
+          description: "Course materials for current and previous students",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/teaching/";
+            window.location.href = "/Teaching/";
           },
         },{id: "nav-projects",
           title: "Projects",
@@ -42,51 +42,21 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+            },},{id: "projects-luminescent-europium-iii-complexes",
+          title: 'Luminescent Europium(III) Complexes',
+          description: "Synthesis and photophysical characterization of Eu(III) sulfonyldithiocarbimate complexes",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-phosphonium-cations-from-mucohaloacids",
+          title: 'Phosphonium Cations from Mucohaloacids',
+          description: "Reaction of phosphines with reduced mucobromic and mucochloric acids as a route to novel phosphonium salts",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-hybrid-mucohaloacid-mbh-antifungal-agents",
+          title: 'Hybrid Mucohaloacid–MBH Antifungal Agents',
+          description: "Piperazine-bridged conjugates of mucohaloacid and Morita–Baylis–Hillman units as potential antifungal compounds",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
