@@ -195,8 +195,8 @@ nav_order: 2
       <div class="mat-group">
         <div class="mat-group-label">Lecture notes</div>
         <div class="mat-chips">
-          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 1 — Chemical Bonding</a>
-          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 2 — Intermolecular Forces</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qob_20261_m1_notes.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 1 — Chemical Bonding</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qob_20261_m2_notes.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 2 — Intermolecular Forces</a>
           <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 3 — Conjugation</a>
           <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 4 — Nomenclature and Organic Functions</a>
           <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 5 — Conformational Analysis and Projections</a>
@@ -231,8 +231,8 @@ nav_order: 2
       <div class="mat-group">
         <div class="mat-group-label">Lecture notes</div>
         <div class="mat-chips">
-          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 1 — Chemical Bonding</a>
-          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 2 — Inorganic Functions</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qgb_20261_m1_notes.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 1 — Chemical Bonding</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qgb_20261_m2_notes.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 2 — Inorganic Functions</a>
           <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 3 — Solution Chemistry</a>
           <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 4 — Chemical Equilibrium</a>
           <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 5 — Acids, bases, and pH</a>
@@ -267,7 +267,7 @@ nav_order: 2
         <div class="mat-group-label">Lecture notes</div>
         <div class="mat-chips">
           <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 1 — UV Spectroscopy</a>
-          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 2 — Infrared Spectroscopy</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/QO3_20261_Slides_M2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 2 — Infrared Spectroscopy</a>
           <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 3 — NMR Spectroscopy</a>
           <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 4 — Mass Spectrometry</a>
         </div>
@@ -295,7 +295,7 @@ nav_order: 2
         <div class="mat-group-label">Documents</div>
         <div class="mat-chips">
           <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/QGE1_20261_Syllabus.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📄</span> Syllabus</a>
-          <a class="mat-chip soon"><span class="chip-icon">🧪</span> Experiments</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/QGE1_2026_1_Exp.pdf' | relative_url }}" target="_blank"><span class="chip-icon">🧪</span> Experiments</a>
         </div>
       </div>
       <div class="mat-group">
