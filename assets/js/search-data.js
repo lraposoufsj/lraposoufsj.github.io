@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/Teaching/";
           },
+        },{id: "nav-lecture-notes",
+          title: "Lecture Notes",
+          description: "Comprehensive lecture notes on topics",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/notes/";
+          },
         },{id: "nav-projects",
           title: "Projects",
           description: "This page collects current and past research projects and interests.",
