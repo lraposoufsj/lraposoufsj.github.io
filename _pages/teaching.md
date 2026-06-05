@@ -197,8 +197,8 @@ nav_order: 2
         <div class="mat-chips">
           <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qob_20261_m1_notes.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 1 — Chemical Bonding</a>
           <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qob_20261_m2_notes.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 2 — Intermolecular Forces</a>
-          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 3 — Conjugation</a>
-          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 4 — Nomenclature and Organic Functions</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qob_20261_m3_notes.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 3 — Conjugation</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qob_20261_m4_notes.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 4 — Nomenclature and Organic Functions</a>
           <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 5 — Conformational Analysis and Projections</a>
           <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 6 — Stereochemistry</a>
         </div>
@@ -206,8 +206,8 @@ nav_order: 2
       <div class="mat-group">
         <div class="mat-group-label">Tests</div>
         <div class="mat-chips">
-          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 1 — Parts 1 and 2</a>
-          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 2 — Parts 3 and 4</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qob_20261_test1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1 — Parts 1 and 2</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qob_20261_test2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 2 — Parts 3 and 4</a>
           <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 3 — Parts 5 and 6</a>
           <a class="mat-chip soon"><span class="chip-icon">📝</span> Substitute Test</a>
         </div>
@@ -233,16 +233,16 @@ nav_order: 2
         <div class="mat-chips">
           <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qgb_20261_m1_notes.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 1 — Chemical Bonding</a>
           <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qgb_20261_m2_notes.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 2 — Inorganic Functions</a>
-          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 3 — Solution Chemistry</a>
-          <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 4 — Chemical Equilibrium</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qgb_20261_m3_notes.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 3 — Solution Chemistry</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qgb_20261_m4_notes.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📊</span> Part 4 — Chemical Equilibrium</a>
           <a class="mat-chip soon"><span class="chip-icon">📊</span> Part 5 — Acids, bases, and pH</a>
         </div>
       </div>
       <div class="mat-group">
         <div class="mat-group-label">Tests</div>
         <div class="mat-chips">
-          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 1 — Parts 1 and 2</a>
-          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 2 — Part 3</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qgb_20261_test1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1 — Parts 1 and 2</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qgb_20261_test2.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 2 — Part 3</a>
           <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 3 — Parts 4 and 5</a>
           <a class="mat-chip soon"><span class="chip-icon">📝</span> Substitute Test</a>
         </div>
@@ -275,7 +275,7 @@ nav_order: 2
       <div class="mat-group">
         <div class="mat-group-label">Tests</div>
         <div class="mat-chips">
-          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 1 — Parts 1 and 2</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qo3_20261_test1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1 — Parts 1 and 2</a>
           <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 2 — Parts 1 to 3</a>
           <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 3 — Parts 1 to 4</a>
           <a class="mat-chip soon"><span class="chip-icon">📝</span> Substitute Test</a>
@@ -301,7 +301,7 @@ nav_order: 2
       <div class="mat-group">
         <div class="mat-group-label">Tests</div>
         <div class="mat-chips">
-          <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 1</a>
+          <a class="mat-chip" href="{{ '/assets/pdf/ufsj/2026-1/qe1_20261_test1.pdf' | relative_url }}" target="_blank"><span class="chip-icon">📝</span> Test 1</a>
           <a class="mat-chip soon"><span class="chip-icon">📝</span> Test 2</a>
           <a class="mat-chip soon"><span class="chip-icon">📝</span> Substitute Test</a>
         </div>
